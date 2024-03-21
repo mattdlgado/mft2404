@@ -1,5 +1,5 @@
 .hbspt-form {
-  @apply backdrop-blur border border-neutral-50/10 p-5 accent-primary-400;
+  @apply backdrop-blur-md border border-neutral-50/10 p-5 accent-primary-400;
 }
 
 fieldset {
