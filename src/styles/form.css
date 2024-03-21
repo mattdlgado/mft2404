@@ -32,6 +32,10 @@ a {
   @apply underline;
 }
 
+.actions {
+  @apply text-center;
+}
+
 .hs-button {
   @apply uppercase cursor-pointer font-bold tracking-widest hover:tracking-normal;
 }
