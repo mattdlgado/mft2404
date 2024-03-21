@@ -33,5 +33,5 @@ a {
 }
 
 .hs-button {
-  @apply uppercase cursor-pointer hover:text-primary-400;
+  @apply uppercase cursor-pointer font-bold tracking-widest hover:tracking-normal;
 }

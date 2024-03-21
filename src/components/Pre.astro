@@ -10,9 +10,7 @@ import LogoWhite from "./icons/LogoWhite.astro";
 import MapPin from "./icons/MapPin.astro";
 ---
 
-<section
-  class="text-neutral-50 min-h-dvh grid place-items-center py-20"
->
+<section class="text-neutral-50 min-h-dvh grid place-items-center py-20">
   <div class="page-width cols items-center" data-cols="2">
     <div>
       <span class="block mb-2">
@@ -47,3 +45,21 @@ import MapPin from "./icons/MapPin.astro";
 >
   <source src="/m4t-hero-video-background.mp4" type="video/mp4" />
 </video>
+
+<style>
+  video {
+    opacity: 0;
+    animation: fadeIn 1000ms ease-in-out forwards;
+  }
+
+  section {
+    opacity: 0;
+    animation: fadeIn 1000ms ease-in-out forwards 500ms;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+</style>
