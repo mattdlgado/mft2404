@@ -9,7 +9,7 @@ import data from "../data/main.json";
       {
         data.people.map((item) => (
           <>
-            <div class="swiper-slide backdrop-blur border border-neutral-50/10 relative min-h-96 flex-col p-4 select-none">
+            <div class="swiper-slide glass relative min-h-96 flex-col p-4 select-none">
               <img
                 src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/${item.photo[0]}.webp`}
                 alt={item.photo[1]}
@@ -17,7 +17,7 @@ import data from "../data/main.json";
                 width="256"
                 class="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-90 hover:opacity-100 transition"
               />
-              <div class="backdrop-blur border border-neutral-50/10 p-2 w-fit mt-auto bg-neutral-950/50 text-neutral-50">
+              <div class="glass p-2 w-fit mt-auto bg-neutral-950/50 text-neutral-50">
                 <h3>{item.name}</h3>
                 <p class="mb-4">
                   <small>{item.position}</small>
@@ -35,9 +35,7 @@ import data from "../data/main.json";
         ))
       }
     </div>
-    <div
-      class="flex gap-4 absolute bottom-4 right-10 z-10 backdrop-blur border border-neutral-50/10 p-2"
-    >
+    <div class="flex gap-4 absolute bottom-4 right-10 z-10 glass p-2">
       <span class="swiper-button-prev prev-ponente"></span>
       <span class="swiper-button-next next-ponente"></span>
     </div>

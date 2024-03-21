@@ -45,6 +45,11 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
         @apply bg-primary-400;
       }
 
+      .glass,
+      .hbspt-form {
+        @apply backdrop-blur border border-neutral-50/10;
+      }
+
       .page,
       .full-page {
         @apply px-3 mx-auto;

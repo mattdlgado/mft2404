@@ -10,6 +10,16 @@ import LogoWhite from "./icons/LogoWhite.astro";
 import MapPin from "./icons/MapPin.astro";
 ---
 
+<video
+  class="h-screen w-full object-cover fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+  autoplay
+  loop
+  muted
+  playsinline
+>
+  <source src="/m4t-hero-video-background.mp4" type="video/mp4" />
+</video>
+
 <main class="text-neutral-50 min-h-dvh grid place-items-center py-20">
   <div class="page cols items-center" data-cols="2">
     <div>
@@ -35,16 +45,6 @@ import MapPin from "./icons/MapPin.astro";
     <Form />
   </div>
 </main>
-
-<video
-  class="h-screen w-full object-cover fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10"
-  autoplay
-  loop
-  muted
-  playsinline
->
-  <source src="/m4t-hero-video-background.mp4" type="video/mp4" />
-</video>
 
 <style>
   video {
