@@ -1,0 +1,67 @@
+---
+import data from "../data/main.json";
+---
+
+<section id="ponentes" class="page mb-2">
+  <h2 class="text-4xl font-bold text-primary-400 mb-4">Ponentes confirmados</h2>
+  <div class="swiper ponentes">
+    <div class="swiper-wrapper">
+      {
+        data.people.map((item) => (
+          <>
+            <div class="swiper-slide backdrop-blur border border-neutral-50/10 relative min-h-96 flex-col p-4 select-none">
+              <img
+                src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/${item.photo[0]}.webp`}
+                alt={item.photo[1]}
+                height="256"
+                width="256"
+                class="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-90 hover:opacity-100 transition"
+              />
+              <div class="backdrop-blur border border-neutral-50/10 p-2 w-fit mt-auto bg-neutral-950/50 text-neutral-50">
+                <h3>{item.name}</h3>
+                <p class="mb-4">
+                  <small>{item.position}</small>
+                </p>
+                <img
+                  src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/${item.logo[0]}`}
+                  alt={item.logo[1]}
+                  height="20"
+                  width="144"
+                  class="h-5 w-fit object-contain object-left"
+                />
+              </div>
+            </div>
+          </>
+        ))
+      }
+    </div>
+    <div
+      class="flex gap-4 absolute bottom-4 right-10 z-10 backdrop-blur border border-neutral-50/10 p-2"
+    >
+      <span class="swiper-button-prev prev-ponente"></span>
+      <span class="swiper-button-next next-ponente"></span>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    opacity: 0;
+    animation: fadeIn 1000ms ease-in-out forwards 1000ms;
+  }
+
+  section .swiper-slide {
+    display: flex !important;
+  }
+
+  .prev-ponente,
+  .next-ponente {
+    --swiper-navigation-size: 20px;
+    top: initial;
+    right: initial;
+    left: initial;
+    position: initial;
+    margin-top: initial;
+    @apply text-primary-400;
+  }
+</style>

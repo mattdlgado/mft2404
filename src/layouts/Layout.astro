@@ -30,6 +30,21 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
   <body class="bg-primary-950 font-body overflow-x-hidden">
     <slot />
     <style is:global>
+      /** Scrollbar */
+      ::-webkit-scrollbar {
+        @apply w-2;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        @apply bg-transparent;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        @apply bg-primary-400;
+      }
+
       .page,
       .full-page {
         @apply px-3 mx-auto;
@@ -71,6 +86,12 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
 
       .cols[data-cols="4"] {
         --cols: 4;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
       }
     </style>
   </body>

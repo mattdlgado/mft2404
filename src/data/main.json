@@ -39,46 +39,29 @@
   ],
   "people": [
     {
-      "photo": ["ignacio_castillo", "Ignacio Castillo"],
-      "name": "Nombre del ponente",
-      "position": "Cargo del ponente",
-      "logo": ["immune-logo.svg", "IMMUNE Technology Institute"]
+      "photo": ["raul_marin", "Raúl Marín"],
+      "name": "Raúl Marín",
+      "position": "Head teacher UX/UI",
+      "logo": ["immune-logo-white.svg", "IMMUNE Technology Institute"]
     },
     {
-      "photo": ["ignacio_castillo", "Ignacio Castillo"],
-      "name": "Nombre del ponente",
-      "position": "Cargo del ponente",
-      "logo": ["immune-logo.svg", "IMMUNE Technology Institute"]
+      "photo": ["javier_recuenco", "Javier Recuenco"],
+      "name": "Javier Recuenco",
+      "position": "CSO & Founder",
+      "logo": ["singular_solving-logo.svg", "Singular Solving"]
+    },
+
+    {
+      "photo": ["agustin_cuenca", "Agustin Cuenca"],
+      "name": "Agustin Cuenca",
+      "position": "CEO & Founder",
+      "logo": ["entaina-logo.webp", "Entaina"]
     },
     {
-      "photo": ["ignacio_castillo", "Ignacio Castillo"],
-      "name": "Nombre del ponente",
-      "position": "Cargo del ponente",
-      "logo": ["immune-logo.svg", "IMMUNE Technology Institute"]
-    },
-    {
-      "photo": ["ignacio_castillo", "Ignacio Castillo"],
-      "name": "Nombre del ponente",
-      "position": "Cargo del ponente",
-      "logo": ["immune-logo.svg", "IMMUNE Technology Institute"]
-    },
-    {
-      "photo": ["ignacio_castillo", "Ignacio Castillo"],
-      "name": "Nombre del ponente",
-      "position": "Cargo del ponente",
-      "logo": ["immune-logo.svg", "IMMUNE Technology Institute"]
-    },
-    {
-      "photo": ["ignacio_castillo", "Ignacio Castillo"],
-      "name": "Nombre del ponente",
-      "position": "Cargo del ponente",
-      "logo": ["immune-logo.svg", "IMMUNE Technology Institute"]
-    },
-    {
-      "photo": ["ignacio_castillo", "Ignacio Castillo"],
-      "name": "Nombre del ponente",
-      "position": "Cargo del ponente",
-      "logo": ["immune-logo.svg", "IMMUNE Technology Institute"]
+      "photo": ["lula_leon", "Lula de León"],
+      "name": "Lula de León",
+      "position": "CEO",
+      "logo": ["leemons-logo-white.svg", "Leemons"]
     }
   ]
 }
