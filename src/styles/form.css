@@ -9,7 +9,7 @@ fieldset {
 
 .hs-input:not([type="checkbox"]) {
   width: 100% !important;
-  @apply h-10 bg-transparent border-b;
+  @apply h-10 bg-transparent border-b px-2;
 }
 
 option {
