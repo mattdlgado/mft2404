@@ -1,4 +1,5 @@
 ---
+import Badge from "../components/Badge.astro";
 import Layout from "../layouts/Layout.astro";
 
 const i = "IMMUNE",
@@ -18,8 +19,8 @@ const i = "IMMUNE",
   robots="index, follow"
   img="https://www.madridfortech.com/share.webp"
 >
-  <section class="text-neutral-50 py-20">
-    <h1>Políticas de privacidad</h1>
+  <section class="text-neutral-50 py-20 page">
+    <h1 class="text-7xl md:text-8xl lg:text-9xl mb-10">Políticas de privacidad</h1>
     <p>
       En aplicación de lo dispuesto en el Reglamento Europeo General de
       Protección de Datos de Abril 2016 (RGPD), la Ley Orgánica 3/2018, de 5 de
@@ -41,7 +42,7 @@ const i = "IMMUNE",
       nos proporcionas, así como a todos los datos que nos facilites al acceder
       a cualquiera de los servicios disponibles en la web.
     </p>
-    <h2>PROTECCIÓN DE DATOS PERSONALES</h2>
+    <h2 class="text-xl font-bold mb-4 border-b">Protección de datos personales</h2>
     <p>
       {i} como propietario del dominio {mft} informa a los usuarios de su Web, acerca
       de su Política de Protección de Datos Personales para que determinen libre
@@ -255,4 +256,20 @@ const i = "IMMUNE",
       o modificaciones de la presente política de privacidad.
     </p>
   </section>
+
+  <a href="http://madridfortech.com/" class="text-neutral-50 fixed top-4 left-1/2 -translate-x-1/2">
+    <Badge text="Volver al inicio" />
+  </a>
 </Layout>
+
+<style>
+    section p,
+    section ul {
+        @apply mb-4;
+    }
+
+    ul {
+        list-style: initial;
+        @apply px-4;
+    }
+</style>

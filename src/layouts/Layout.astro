@@ -30,17 +30,13 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
   <body class="bg-primary-950 font-body overflow-x-hidden">
     <slot />
     <style is:global>
-      .page-width,
+      .page,
       .full-page {
         @apply px-3 mx-auto;
       }
 
-      .page-width {
+      .page {
         @apply max-w-desktop; /** 1024px */
-      }
-
-      .page-width.cols {
-        --desktop: theme(spacing.desktop);
       }
 
       .cols {
