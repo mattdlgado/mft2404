@@ -1,0 +1,84 @@
+{
+  "cta": ["¡APÚNTATE!", "#"],
+  "edition": "IV",
+  "programs": [
+    "Data Science",
+    "Ciberseguridad",
+    "Desarrollo Web",
+    "Inteligencia Artificial",
+    "Cloud Computing",
+    "Diseño UX/UI"
+  ],
+  "date": "17 de abril",
+  "business": [
+    {
+      "src": "/bbva_next_technologies-logo.webp",
+      "alt": "BBVA Next Technologies",
+      "size": [187, 55]
+    },
+    {
+      "src": "/iberdrola_espana-logo.svg",
+      "alt": "Iberdrola",
+      "size": [147, 55]
+    },
+    {
+      "src": "/caixabank_tech-logo.webp",
+      "alt": "Caixabank Tech",
+      "size": [219, 55]
+    },
+    {
+      "src": "/hp_scds-logo.svg",
+      "alt": "HP SCDS",
+      "size": [149, 55]
+    },
+    {
+      "src": "/sanitas-logo.svg",
+      "alt": "Sanitas",
+      "size": [55, 55]
+    }
+  ],
+  "people": [
+    {
+      "photo": ["ignacio_castillo", "Ignacio Castillo"],
+      "name": "Nombre del ponente",
+      "position": "Cargo del ponente",
+      "logo": ["immune-logo.svg", "IMMUNE Technology Institute"]
+    },
+    {
+      "photo": ["ignacio_castillo", "Ignacio Castillo"],
+      "name": "Nombre del ponente",
+      "position": "Cargo del ponente",
+      "logo": ["immune-logo.svg", "IMMUNE Technology Institute"]
+    },
+    {
+      "photo": ["ignacio_castillo", "Ignacio Castillo"],
+      "name": "Nombre del ponente",
+      "position": "Cargo del ponente",
+      "logo": ["immune-logo.svg", "IMMUNE Technology Institute"]
+    },
+    {
+      "photo": ["ignacio_castillo", "Ignacio Castillo"],
+      "name": "Nombre del ponente",
+      "position": "Cargo del ponente",
+      "logo": ["immune-logo.svg", "IMMUNE Technology Institute"]
+    },
+    {
+      "photo": ["ignacio_castillo", "Ignacio Castillo"],
+      "name": "Nombre del ponente",
+      "position": "Cargo del ponente",
+      "logo": ["immune-logo.svg", "IMMUNE Technology Institute"]
+    },
+    {
+      "photo": ["ignacio_castillo", "Ignacio Castillo"],
+      "name": "Nombre del ponente",
+      "position": "Cargo del ponente",
+      "logo": ["immune-logo.svg", "IMMUNE Technology Institute"]
+    },
+    {
+      "photo": ["ignacio_castillo", "Ignacio Castillo"],
+      "name": "Nombre del ponente",
+      "position": "Cargo del ponente",
+      "logo": ["immune-logo.svg", "IMMUNE Technology Institute"]
+    }
+  ]
+}

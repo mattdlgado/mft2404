@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ["Plus Jakarta Sans Variable", sans - serif],
+        body: ["Plus Jakarta Sans Variable", "sans-serif"],
       },
       spacing: {
-        desktop: "1024px",
-        wide: "1366px",
+        desktop: "1366px",
+        breakpoint: "768px",
       },
       colors: {
         primary: {

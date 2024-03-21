@@ -1,0 +1,49 @@
+---
+import data from "../data/main.json";
+import Badge from "./Badge.astro";
+import Countdown from "./Countdown.astro";
+import Form from "./Form.astro";
+import CalendarEvent from "./icons/CalendarEvent.astro";
+import Clock from "./icons/Clock.astro";
+import Immune from "./icons/Immune.astro";
+import LogoWhite from "./icons/LogoWhite.astro";
+import MapPin from "./icons/MapPin.astro";
+---
+
+<section
+  class="text-neutral-50 min-h-dvh grid place-items-center py-20"
+>
+  <div class="page-width cols items-center" data-cols="2">
+    <div>
+      <span class="block mb-2">
+        <Immune />
+      </span>
+      <LogoWhite />
+      <h1 class="font-bold text-2xl my-4">
+        {data.edition} EDICIÓN <br />ENCUENTRO DE TALENTO TECNOLÓGICO
+      </h1>
+      <Badge text={data.date}>
+        <CalendarEvent />
+      </Badge>
+      <Badge text="Mañana y tarde">
+        <Clock />
+      </Badge>
+      <Badge text="Híbrido*">
+        <MapPin />
+      </Badge>
+      <Countdown />
+      <small>*Presencial (Castellana 89, 28046 Madrid) / Online</small>
+    </div>
+    <Form />
+  </div>
+</section>
+
+<video
+  class="h-full w-full object-cover fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10"
+  autoplay
+  loop
+  muted
+  playsinline
+>
+  <source src="/m4t-hero-video-background.mp4" type="video/mp4" />
+</video>
