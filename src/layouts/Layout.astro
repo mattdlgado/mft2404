@@ -1,51 +1,102 @@
 ---
+// Supports weights 200-800
+import "@fontsource-variable/plus-jakarta-sans";
+import SEO from "../components/SEO.astro";
+
 interface Props {
-	title: string;
+  title: string;
+  description: string;
+  keywords: string;
+  canonical: string;
+  robots: string;
+  img: string;
 }
 
-const { title } = Astro.props;
+const { title, description, keywords, canonical, robots, img } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="es" id="smooth-wrapper">
+  <head>
+    <meta name="theme-color" content="#202020" />
+    <SEO
+      title={title}
+      description={description}
+      keywords={keywords}
+      canonical={canonical}
+      robots={robots}
+      img={img}
+    />
+  </head>
+  <body>
+    <slot />
+    <style is:global>
+      .page-width,
+      .page-wide,
+      .full-page {
+        @apply px-3;
+      }
+
+      .page-width {
+        @apply max-w-desktop mx-auto; /** 1024px */
+      }
+
+      .page-wide {
+        @apply max-w-wide ms-12 md:mx-auto; /** 1280px */
+      }
+
+      .page-width.cols {
+        --desktop: theme(spacing.desktop);
+      }
+
+      .page-wide.cols {
+        --desktop: theme(spacing.wide);
+      }
+
+      .hero .cols,
+      .icon-section .cols {
+        --gap: theme(spacing.10);
+      }
+
+      .icon-section .cols {
+        --desktop: calc(
+          theme(spacing.desktop) - theme(spacing.3) - theme(spacing.10)
+        );
+      }
+
+      .cols {
+        --gap: theme(spacing.1);
+
+        @apply grid;
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax(
+            min(
+              100%,
+              calc(
+                (
+                    var(--desktop) - (theme(spacing.3) * 2) -
+                      (var(--gap) * (var(--cols) - 1))
+                  ) / var(--cols)
+              )
+            ),
+            1fr
+          )
+        );
+        gap: var(--gap);
+      }
+
+      .cols[data-cols="2"] {
+        --cols: 2;
+      }
+
+      .cols[data-cols="3"] {
+        --cols: 3;
+      }
+
+      .cols[data-cols="4"] {
+        --cols: 4;
+      }
+    </style>
+  </body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
