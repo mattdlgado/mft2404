@@ -47,7 +47,9 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
 
       .glass,
       .hbspt-form {
-        @apply backdrop-blur border border-neutral-50/10;
+        -webkit-backdrop-filter: blur(40px);
+        backdrop-filter: blur(40px);
+        @apply border border-neutral-50/10;
       }
 
       .page,
