@@ -27,7 +27,7 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
       img={img}
     />
   </head>
-  <body class="bg-primary-950 font-body overflow-x-hidden">
+  <body class="bg-primary-950 font-body overflow-x-hidden min-h-dvh">
     <slot />
     <style is:global>
       /** Scrollbar */
@@ -43,6 +43,10 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
       /* Handle */
       ::-webkit-scrollbar-thumb {
         @apply bg-primary-400;
+      }
+
+      :focus-visible {
+        outline: theme(colors.primary.400) solid 1px;
       }
 
       .glass,
@@ -98,6 +102,13 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
       @keyframes fadeIn {
         to {
           opacity: 1;
+        }
+      }
+
+      @keyframes zoom {
+        to {
+          opacity: 1;
+          transform: scale(1);
         }
       }
     </style>

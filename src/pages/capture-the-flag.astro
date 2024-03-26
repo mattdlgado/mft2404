@@ -1,0 +1,162 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Cube from "../components/Cube.astro";
+import CaptureTheFlagLogo from "../components/icons/CaptureTheFlagLogo.astro";
+import LogoWhite from "../components/icons/LogoWhite.astro";
+
+const baseClass = "bg-primary-950/75 text-neutral-50 backdrop-blur",
+  buttonClass =
+    baseClass +
+    " button relative p-2 m-2 before:absolute before:w-4 before:h-4 before:-top-1 before:-left-1 before:border-primary-400 before:border-t before:border-l hover:before:-top-[1px] hover:before:-left-[1px] after:absolute after:w-4 after:h-4 after:-bottom-1 after:-right-1 after:border-primary-400 after:border-b after:border-r hover:after:-bottom-[1px] hover:after:-right-[1px]",
+  dialogClass =
+    baseClass +
+    " ctf-info w-[90%] max-w-breakpoint max-h-[90dvh] overflow-y-auto border border-primary-400 p-10 fixed z-90 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 opacity-0 pointer-events-none transition",
+  closeClass = buttonClass + " ctf-close";
+---
+
+<Layout
+  title="Capture the flag | Madrid4Tech"
+  description="Evento Madrid4Tech organizado por IMMUNE Technology Institute para unir empresas y profesionales de la tecnología."
+  keywords="madridfortech, madrid4ech, evento, tecnología"
+  canonical="https://www.madridfortech.com/"
+  robots="index, follow"
+  img="https://www.madridfortech.com/share.webp"
+>
+  <div
+    class="text-neutral-50 w-full min-h-screen grid place-items-center p-[40px]"
+  >
+    <div class="zoom flex flex-wrap gap-4 justify-between w-full self-start">
+      <span class="h-10">
+        <CaptureTheFlagLogo />
+      </span>
+      <div class="w-full md:w-auto bg-primary-950/75 text-neutral-50 backdrop-blur border border-primary-400 p-5 grid gap-2">
+        <div class="flex justify-between gap-2">
+          <h2>Mentores:</h2>
+          <img
+          src="https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/immersive_labs-logo.svg"
+          alt="Immersive labs logo"
+          width="144"
+          height="20"
+          />
+        </div>
+        <div class="flex items-center justify-between gap-2">
+          <div>
+            <h2>Jaume Baltasar</h2>
+            <small>Solutions Consultant</small>
+          </div>
+          <img
+            src="https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/jaume_baltasar.webp"
+            alt="Jaume Baltasar"
+            width="50"
+            height="50"
+          />
+        </div>
+        <div class="flex items-center justify-between gap-2">
+          <div>
+            <h2>Virginia Santos</h2>
+            <small>Territory Manager South EMEA</small>
+          </div>
+          <img
+            src="https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/virginia_santos.webp"
+            alt="Jaume Baltasar"
+            width="50"
+            height="50"
+          />
+        </div>
+      </div>
+    </div>
+    <main id="main">
+      <div id="options" class="scale-100 transition">
+        <h1 class="text-center">Capture the flag</h1>
+        <h2 class="text-center text-4xl mb-4">
+          ¿En que reto quieres participar?
+        </h2>
+        <div class="text-center">
+          <button id="ctf-basic" class={buttonClass}>Básico</button>
+          <button id="ctf-advance" class={buttonClass}>Avanzado</button>
+        </div>
+      </div>
+      <dialog id="ctf-basic-info" class={dialogClass}>
+        <h3 class="font-bold text-2xl text-primary-400">
+          Omnipotent Productions:
+        </h3>
+        <p class="mb-4">
+          Un grupo de hackers está atacando la compañía cinematográfica en la
+          que trabajas. ¿Podrás detenerlos antes de que sea demasiado tarde?.
+          Utiliza todos tus conocimientos de análisis forense e inteligencia
+          para rastrear todas las pistas que han dejado en los sistemas y evitar
+          el próximo ataque.
+        </p>
+        <h3 class="font-bold text-2xl text-primary-400">SuperSonic:</h3>
+        <p class="mb-4">
+          Un grupo de hackers ha decidido poner en jaque a los aeropuertos de
+          todo el mundo. Utiliza todos tus conocimientos de respuesta a
+          incidentes para que no se salgan con la suya!
+        </p>
+        <div class="text-right">
+          <button class={buttonClass}>Apuntarse</button>
+          <button class={closeClass}>Cambiar de reto</button>
+        </div>
+      </dialog>
+
+      <dialog id="ctf-advance-info" class={dialogClass}>
+        <h3 class="font-bold text-2xl text-primary-400">Kween Industries:</h3>
+        <p class="mb-4">
+          Industrias Kween ha sido atacada. Su política de respuesta a
+          incidentes ha sido divulgada y tu eres el investigador principal.
+          ¿Podrás identificar lo que los hackers han en hecho en la red?
+        </p>
+        <div class="text-right">
+          <button class={buttonClass}>Apuntarse</button>
+          <button class={closeClass}>Cambiar de reto</button>
+        </div>
+      </dialog>
+    </main>
+    <div class="zoom flex items-center justify-between w-full self-end">
+      <a href="#" class={buttonClass}>Bases legales</a>
+      <a href="https://madridfortech.com/" class="w-36">
+        <LogoWhite />
+      </a>
+    </div>
+  </div>
+
+  <Cube />
+</Layout>
+
+<style>
+  .button::before,
+  .button::after {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .button:hover:before,
+  .button:hover::after {
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+  }
+
+  dialog {
+    margin: 0;
+  }
+
+  .ctf-show {
+    @apply scale-100 opacity-100 pointer-events-auto;
+  }
+
+  .ctf-hidden {
+    @apply scale-0;
+  }
+
+  .zoom {
+    opacity: 0;
+    transform: scale(1.5);
+    animation: zoom 500ms ease-in-out 1000ms forwards;
+  }
+
+  #options {
+    opacity: 0;
+    animation: fadeIn 500ms ease-in-out 100ms forwards;
+  }
+</style>
+
+<script src="../scripts/ctf.js"></script>
