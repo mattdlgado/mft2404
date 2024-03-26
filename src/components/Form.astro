@@ -1,12 +1,18 @@
 ---
 import "../styles/form.css"
+
+interface Props {
+  id: string;
+}
+
+const { id } = Astro.props
 ---
 
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-<script is:inline>
+<script is:inline define:vars={{id}}>
   hbspt.forms.create({
     region: "na1",
     portalId: "6604339",
-    formId: "b7bfe983-7d9e-438e-ab6b-21ea3afd616c"
+    formId: id
   });
 </script>

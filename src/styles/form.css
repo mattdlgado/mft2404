@@ -1,5 +1,7 @@
 .hbspt-form {
-  @apply p-5 accent-primary-400;
+  @apply p-5 accent-primary-400 border border-neutral-50/10;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
 }
 
 fieldset {

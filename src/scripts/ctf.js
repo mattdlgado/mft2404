@@ -8,53 +8,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Muestra el diálogo básico
   btnBasic.addEventListener("click", function () {
-    basicInfo.showModal();
-    setTimeout(() => {
-      basicInfo.classList.add("ctf-show");
-    }, 100);
+    basicInfo.classList.add("ctf-show");
     options.classList.add("ctf-hidden");
   });
 
   // Muestra el diálogo avanzado
   btnAdvance.addEventListener("click", function () {
-    advanceInfo.showModal();
-    setTimeout(() => {
-      advanceInfo.classList.add("ctf-show");
-    }, 100);
+    advanceInfo.classList.add("ctf-show");
     options.classList.add("ctf-hidden");
   });
 
   // Cierra los diálogos y muestra las opciones
-  function closeDialogs() {
-    [basicInfo, advanceInfo].forEach(dialog => {
-      if (dialog.open) {
-        dialog.classList.remove("ctf-show");
-        setTimeout(() => {
-          dialog.close();
-        }, 100);
-        options.classList.remove("ctf-hidden");
-      }
+  function closeBoxes() {
+    [basicInfo, advanceInfo].forEach(item => {
+      item.classList.remove("ctf-show");
+      options.classList.remove("ctf-hidden");
     });
   }
 
   // Cierra los diálogos al hacer clic en los botones de cierre
   closeButtons.forEach(function (button) {
-    button.addEventListener("click", closeDialogs);
+    button.addEventListener("click", closeBoxes);
   });
 
   // Cierra los diálogos al hacer clic fuera de ellos
-  [basicInfo, advanceInfo].forEach(dialog => {
-    dialog.addEventListener('click', function(event) {
-      if (event.target === this) {
-        closeDialogs();
-      }
-    });
-  });
-
-  // Cierra los diálogos al presionar la tecla Esc
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape" || event.keyCode === 27) {
-      closeDialogs();
+  // Dado que estamos trabajando con <div>, necesitamos una nueva lógica para manejar clics fuera
+  document.addEventListener("click", function (event) {
+    if (!basicInfo.contains(event.target) && !btnBasic.contains(event.target) && basicInfo.classList.contains("ctf-show")) {
+      closeBoxes();
+    }
+    if (!advanceInfo.contains(event.target) && !btnAdvance.contains(event.target) && advanceInfo.classList.contains("ctf-show")) {
+      closeBoxes();
     }
   });
 });
