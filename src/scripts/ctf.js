@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     options.classList.add("ctf-hidden");
 
     if (inputs.length > 0) {
-      inputs[0].value = "CTF reto Básico";
+      inputs[0].value = "Rookie";
     }
   });
 
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     options.classList.add("ctf-hidden");
 
     if (inputs.length > 0) {
-      inputs[0].value = "CTF reto Avanzado";
+      inputs[0].value = "Advanced";
     }
   });
 
