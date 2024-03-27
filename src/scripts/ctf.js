@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnAdvance = document.getElementById("ctf-advance");
   const advanceInfo = document.getElementById("ctf-advance-info");
   const closeButtons = document.querySelectorAll(".ctf-close");
-  const inputs = document.getElementsByName("auxdev");
+  const inputs = document.getElementsByName("ctf");
 
   // Muestra el diálogo básico
   btnBasic.addEventListener("click", function () {
