@@ -5,12 +5,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnAdvance = document.getElementById("ctf-advance");
   const advanceInfo = document.getElementById("ctf-advance-info");
   const closeButtons = document.querySelectorAll(".ctf-close");
+  const inputs = document.getElementsByName("auxdev");
 
   // Muestra el diálogo básico
   btnBasic.addEventListener("click", function () {
     basicInfo.classList.add("ctf-show");
     basicInfo.classList.add("ctf-show-visible");
     options.classList.add("ctf-hidden");
+
+    if (inputs.length > 0) {
+      inputs[0].value = "CTF reto Básico";
+    }
   });
 
   // Muestra el diálogo avanzado
@@ -18,6 +23,10 @@ document.addEventListener("DOMContentLoaded", function () {
     advanceInfo.classList.add("ctf-show");
     advanceInfo.classList.add("ctf-show-visible");
     options.classList.add("ctf-hidden");
+
+    if (inputs.length > 0) {
+      inputs[0].value = "CTF reto Avanzado";
+    }
   });
 
   // Cierra los diálogos y muestra las opciones
@@ -28,6 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
         item.classList.remove("ctf-show-visible");
       }, 100);
       options.classList.remove("ctf-hidden");
+
+      if (inputs.length > 0) {
+        inputs[0].value = "";
+      }
     });
   }
 
