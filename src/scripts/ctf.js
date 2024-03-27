@@ -9,19 +9,24 @@ document.addEventListener("DOMContentLoaded", function () {
   // Muestra el diálogo básico
   btnBasic.addEventListener("click", function () {
     basicInfo.classList.add("ctf-show");
+    basicInfo.classList.add("ctf-show-visible");
     options.classList.add("ctf-hidden");
   });
 
   // Muestra el diálogo avanzado
   btnAdvance.addEventListener("click", function () {
     advanceInfo.classList.add("ctf-show");
+    advanceInfo.classList.add("ctf-show-visible");
     options.classList.add("ctf-hidden");
   });
 
   // Cierra los diálogos y muestra las opciones
   function closeBoxes() {
-    [basicInfo, advanceInfo].forEach(item => {
+    [basicInfo, advanceInfo].forEach((item) => {
       item.classList.remove("ctf-show");
+      setTimeout(() => {
+        item.classList.remove("ctf-show-visible");
+      }, 100);
       options.classList.remove("ctf-hidden");
     });
   }
@@ -34,10 +39,18 @@ document.addEventListener("DOMContentLoaded", function () {
   // Cierra los diálogos al hacer clic fuera de ellos
   // Dado que estamos trabajando con <div>, necesitamos una nueva lógica para manejar clics fuera
   document.addEventListener("click", function (event) {
-    if (!basicInfo.contains(event.target) && !btnBasic.contains(event.target) && basicInfo.classList.contains("ctf-show")) {
+    if (
+      !basicInfo.contains(event.target) &&
+      !btnBasic.contains(event.target) &&
+      basicInfo.classList.contains("ctf-show")
+    ) {
       closeBoxes();
     }
-    if (!advanceInfo.contains(event.target) && !btnAdvance.contains(event.target) && advanceInfo.classList.contains("ctf-show")) {
+    if (
+      !advanceInfo.contains(event.target) &&
+      !btnAdvance.contains(event.target) &&
+      advanceInfo.classList.contains("ctf-show")
+    ) {
       closeBoxes();
     }
   });
