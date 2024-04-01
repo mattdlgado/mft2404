@@ -1,0 +1,44 @@
+---
+import Badge from "../components/Badge.astro";
+import Layout from "../layouts/Layout.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  keywords: string;
+  canonical: string;
+  robots: string;
+  img: string;
+}
+
+const { title, description, keywords, canonical, robots, img } = Astro.props;
+---
+
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  robots={robots}
+  img={img}
+>
+  <section class="text-neutral-50 py-20 page legal">
+    <slot />
+  </section>
+
+  <a href="/" class="text-neutral-50 fixed top-4 left-1/2 -translate-x-1/2">
+    <Badge text="Volver al inicio" />
+  </a>
+</Layout>
+
+<style is:global>
+  .legal p,
+  .legal ul {
+    @apply mb-4;
+  }
+
+  .legal ul {
+    list-style: initial;
+    @apply px-4;
+  }
+</style>

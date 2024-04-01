@@ -1,4 +1,12 @@
 {
+  "legal": {
+    "name": "IMMUNE",
+    "company": "IMMUNE CODING INSTITUTE S.L.",
+    "cif": "B-87979407",
+    "url": "https://www.madridfortech.com/",
+    "email": "central@immune.institute",
+    "address": "Paseo de la Castellana 89, 28003, Madrid, España"
+  },
   "cta": ["¡APÚNTATE!", "#"],
   "edition": "IV",
   "programs": [
