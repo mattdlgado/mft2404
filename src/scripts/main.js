@@ -22,7 +22,6 @@ var swiper = new Swiper(".ponentes", {
       slidesPerView: 4,
     },
   },
-  loop: true,
   navigation: {
     nextEl: ".next-ponente",
     prevEl: ".prev-ponente",

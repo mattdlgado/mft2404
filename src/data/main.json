@@ -62,6 +62,18 @@
       "name": "Lula de León",
       "position": "CEO",
       "logo": ["leemons-logo-white.svg", "Leemons"]
+    },
+    {
+      "photo": ["jaume_baltasar", "Jaume Baltasar"],
+      "name": "Jaume Baltasar",
+      "position": "Solutions Consultant",
+      "logo": ["immersive_labs-logo.svg", "Immersive Labs"]
+    },
+    {
+      "photo": ["virginia_santos", "Virginia Santos"],
+      "name": "Virginia Santos",
+      "position": "Territory Manager South EMEA",
+      "logo": ["immersive_labs-logo.svg", "Immersive Labs"]
     }
   ]
 }
