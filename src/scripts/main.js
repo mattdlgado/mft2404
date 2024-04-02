@@ -50,7 +50,6 @@ iconsTimeline.from(".swiper-slide", {
   y: 80,
 });
 
-
 // Lenis
 import Lenis from "@studio-freight/lenis";
 const lenis = new Lenis();
