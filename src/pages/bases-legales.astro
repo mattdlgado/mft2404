@@ -1,4 +1,5 @@
 ---
+import data from "../data/main.json";
 import Legal from "../layouts/Legal.astro";
 ---
 
@@ -11,54 +12,301 @@ import Legal from "../layouts/Legal.astro";
   img="https://www.madridfortech.com/share.webp"
 >
   <h1 class="text-7xl md:text-8xl lg:text-9xl mb-10">Bases legales</h1>
-  <h2
-    class="text-xl font-bold mb-4 border-b border-primary-400 text-primary-400"
-  >
-    Capture the flag
+  <h2>Capture the flag</h2>
+  <p>
+    {data.legal.company} con domicilio en {data.legal.address}, con C.I.F. {
+      data.legal.cif
+    } (en adelante el Organizador), llevará a cabo la promoción Capture The Flag
+    en forma de concurso a través de la plataforma Immersive Labs y se desarrollará
+    a nivel internacional conforme a las siguientes Bases y Condiciones.
+  </p>
+  <h2>PRIMERA – OBJETO DEL CONCURSO</h2>
+  <p>
+    El objetivo del concurso (https://www.madridfortech.com/capture-the-flag/),
+    es permitir a los participantes demostrar sus destrezas, conocimientos y
+    habilidades en el área de seguridad de la información, y en concreto de
+    seguridad de los sistemas y plataformas, a través de diversos retos
+    diseñados por {data.legal.name} a los participantes.
+  </p>
+  <p>
+    Las personas que demuestren unas mayores destrezas y conocimientos podrán
+    adquirir los premios que se detallan en las presentes bases legales, siempre
+    y cuando cumplan con los requisitos que se establecen para participar.
+  </p>
+  <h2>SEGUNDO - ÁMBITO DE APLICACIÓN DEL CONCURSO Y DURACIÓN DEL MISMO</h2>
+  <p>
+    La participación en el concurso es internacional, pudiendo participar y
+    optar al premio cualquier persona independientemente de su lugar de
+    residencia.
+  </p>
+  <p>
+    El concurso se desarrollará única y exclusivamente a través de internet,
+    entre el día 17 de abril de 2024 a las 16 horas (CEST) y el 27 de noviembre
+    a las 23:59 horas (CEST), pudiendo realizar los retos entre dichas fechas y
+    horario.
+  </p>
+  <p>
+    Una vez haya dado comienzo el primer reto, no se permitirá el acceso a
+    ningún participante más.
+  </p>
+  <h2>TERCERO - REQUISITOS PARA PARTICIPAR</h2>
+  <p>
+    Podrán participar en el concurso las personas mayores de 18 años residentes
+    en el territorio establecido en la cláusula segunda.
+  </p>
+  <p>
+    Asimismo, para poder participar, los interesados deberán registrarse en la
+    siguiente landing page (https://www.madridfortech.com/capture-the-flag/),
+    cumplimentar el formulario de alta, y no haber participado anteriormente en
+    procesos de desarrollo, diseño, ejecución o auditoría de los retos que
+    proponemos o en el mantenimiento de la plataforma de los retos.
+  </p>
+  <p>
+    La participación en el Concurso será gratuita y el número de participantes
+    será ilimitado.
+  </p>
+  <h2>CUARTO - MECÁNICA DEL CONCURSO</h2>
+  <p>
+    El presente concurso consistirá en una serie de retos para poner a prueba
+    conocimientos y habilidades en el área de seguridad de sistemas y
+    aplicaciones.
+  </p>
+  <p>
+    El concurso tendrá lugar en la plataforma de Immersive Labs. En dicha
+    plataforma se detallarán las reglas y estructura de cada uno de los retos,
+    incluyendo su descripción y contenido. Además, se realizará un taller
+    explicativo de cada uno de los retos el día 17 de abril a las 16 horas CEST
+    a la que tendrán acceso todas las personas registradas en el evento.
+  </p>
+  <p>El idioma de la descripción y el contenido estará en español.</p>
+  <p>
+    El Concurso consta de actividades que se dividen en dos niveles: Rookie y
+    Advanced, ambos en modalidad Online, con Capture The Flag (CTF) a través de
+    una plataforma online.
+  </p>
+  <p>
+    Cada participante podrá acceder a la plataforma a través del nombre de
+    usuario y contraseña recibido tras el registro previo. Estas credenciales y
+    las instrucciones serán enviadas por correo electrónico al participante a la
+    dirección indicada en el momento de la inscripción.
+  </p>
+  <p>
+    En referencia a la categoría sin conocimientos (Rookie) y con conocimientos
+    (Advanced) el participante solo computará en el ranking de la casilla que
+    haya marcado en el formulario de inscripción (sin conocimientos / con
+    conocimientos).
+  </p>
+  <p>
+    En la plataforma se encontrarán tanto las descripciones de los retos como el
+    material relacionado (ficheros).
+  </p>
+  <p>
+    Los retos consistirán en actividades que el participante deberá analizar con
+    recursos propios para resolver el objetivo propuesto y obtener la flag que
+    permitirá conseguir los puntos asociados, una vez introducida y validada en
+    la plataforma.
+  </p>
+  <p>
+    La puntuación de cada reto se indicará en la plataforma, además cada reto
+    contará con la posibilidad de obtener pistas que descontarán puntos.
+  </p>
+  <p>
+    La prueba está diseñada para una participación individual. Ello permitirá al
+    participante estimar sus habilidades y posibilidades durante el concurso.
+  </p>
+  <p>
+    Está expresamente prohibida la publicación y/o compartición de soluciones,
+    acto que supondrá la descalificación del participante, sin perjuicio de las
+    posibles acciones legales que {data.legal.name} considere oportunas.
+  </p>
+  <p>
+    La Organización se reserva el derecho a monitorizar y verificar los datos de
+    registro y posibles comportamientos anómalos que contravengan las presentes
+    bases.
+  </p>
+  <h2>
+    QUINTO - SELECCIÓN DEL GANADOR Y CRITERIOS DE DETERMINACIÓN DEL GANADOR
   </h2>
   <p>
-    En cuanto a la elección del ganador de la categoría “principiante” se hará
-    teniendo en cuenta lo siguiente:
+    Una vez finalizado el tiempo de Concurso el día 21 de abril a las 23.59
+    horas, se determinarán los ganadores en función de su posición en el
+    ranking. La posición en el ranking se establecerá por el número de puntos
+    totales obtenidos y en caso de empate de puntos entre 2 o más participantes,
+    se tendrá en cuenta el tiempo total empleado en la resolución. Si
+    persistiera el empate se realizará un sorteo al azar mediante notario.
   </p>
   <p>
-    Es imprescindible completar la colección completa de Omnipotent Productions.
-    Luego, el procedimiento de selección podría ser el siguiente:
-  </p>
-  <ul>
-    <li>
-      Criterio 1. Evaluación de Contenido Completado
-      <ul>
-        <li>
-          Opción 1. Si solo una persona tiene el porcentaje de finalización más
-          alto, esa persona se declara ganadora de la competición.
-        </li>
-        <li>
-          Opción 2. Si hay un empate, es decir, más de una persona tiene el
-          mismo porcentaje de finalización más alto, todas estas personas pasan
-          al Criterio 2.
-        </li>
-      </ul>
-    </li>
-    <li>
-      Criterio 2. Evaluación de Tiempo de Finalización: De las personas
-      seleccionadas en el Criterio 1, las 10 (o menos, si hay menos de 10) que
-      hayan completado los ejercicios en el menor tiempo posible avanzarán al
-      Criterio 3.
-    </li>
-    <li>
-      Criterio 3. Evaluación de Precisión y Tiempo: El ganador será la persona
-      proveniente del Criterio 2 que tenga la mayor precisión. En caso de empate
-      en precisión, el ganador será el que haya completado los ejercicios en el
-      menor tiempo. Si aún hay un empate en el tiempo de finalización, se
-      declararán múltiples ganadores.
-    </li>
-  </ul>
-  <p>
-    El ganador será el que haya completado el ejercicio en menor tiempo y con
-    mayor precisión.
+    Es fundamental haberse inscrito antes del comienzo del concurso (día 17 de
+    abril a las 16h.CEST).
   </p>
   <p>
-    En cuanto a los criterios para los ganadores, se explicará durante el
-    kick-off las reglas para que todos los participantes las tengan claras.
+    Habrá un ganador, un primer puesto por cada ranking, teniendo en cuenta la
+    puntuación máxima obtenida.
+  </p>
+  <p>
+    La Organización se pondrá en contacto con cada ganador a través de los datos
+    de contacto facilitados en la fase de inscripción, a los efectos de
+    confirmar la aceptación del premio. La Organización se pondrá en contacto
+    con los ganadores como máximo en dos ocasiones. Entre cada notificación
+    transcurrirá un día y la Organización esperará respuesta durante tres días
+    máximo desde cada una de las notificaciones. En el caso de que, el ganador
+    rechace el premio o no haya contestado por correo electrónico en el plazo de
+    tres días, se presumirá que rechaza el mismo, por lo que se procederá a
+    contactar con el siguiente participante con mayor puntuación de la lista de
+    clasificación, y así sucesivamente.
+  </p>
+  <p>
+    No obstante, los ganadores y premios serán publicados en la página web de
+    {data.legal.name} www.immune.institute
+  </p>
+  <h2>SEXTA - PREMIO</h2>
+  <p>
+    El premio consta de 750€ euros a repartir entre los dos ganadores: 500€ para
+    el reto advanced y 250€ para el rookie entregados a través de Tarjetas de
+    regalo de Amazon.
+  </p>
+  <p>
+    La entrega de premios se realizará enviando cada una de las tarjetas a las
+    direcciones de correo electrónico de los ganadores una vez que la persona
+    premiada haya aceptado el premio.
+  </p>
+  <p>
+    {data.legal.name} se reserva el derecho a retrasar la entrega del Premio, en
+    caso de que ocurra cualquier eventualidad ajena a su voluntad, caso fortuito
+    o fuerza mayor, así como a cambiar el Premio ofrecido por otro idéntico o de
+    similar valor si concurriere causa justificada.
+  </p>
+  <p>
+    {data.legal.name} no se hará responsable de ninguna pérdida o daño realizado
+    en el Premio una vez sea entregado. El Premio no podrá ser objeto de cambio,
+    alteración, compensación o cesión a petición del/los Ganador/es. En consecuencia,
+    {data.legal.name} no será responsable de ningún daño o perjuicio, de cualquier
+    naturaleza, que pudieran sufrir los Ganadores, con motivo de o en relación con
+    la obtención y posterior uso del Premio.
+  </p>
+  <p>
+    La aceptación del Premio por el Ganador, implica expresamente la
+    autorización a {data.legal.name} para utilizar publicitariamente de forma gratuita
+    su nombre y apellido para que sean publicados en las plataformas digitales de
+    {data.legal.name} única y exclusivamente en su condición de Ganador.
+  </p>
+  <p>
+    El Premio podrá estar sujeto, para su perceptor persona física, al Impuesto
+    sobre la Renta de las Personas Físicas (IRPF) en concepto de ganancia
+    patrimonial, a integrar en la base imponible general de dicho Impuesto según
+    lo previsto en el artículo 48 de la Ley 35/2006 reguladora del mismo. El
+    participante conoce y acepta que los Premios en metálico o en especie podrán
+    contar con la retención fiscal al tipo vigente, si cabe, según lo dispuesto
+    en la Ley del I.R.P.F. y en los reglamentos que la desarrollan, y que tales
+    retenciones deberán ser abonadas por él. Sin perjuicio de lo anterior, y en
+    tal caso, {data.legal.name} realizará un ingreso a cuenta por un importe equivalente
+    al 19% del valor del premio a cuenta del ganador.
+  </p>
+  <h2>SÉPTIMO - CANCELACIONES Y MODIFICACIONES</h2>
+  <p>
+    Las presentes Bases y Condiciones podrán ser modificadas, canceladas y
+    suspendidas por causa justificada por {data.legal.name} en cualquier momento.
+  </p>
+  <p>
+    En estos casos, se informará y difundirá a través de los mismos medios por
+    los que originalmente se difundió el concurso, incluyendo, si resultase
+    necesario, aclaraciones o modificaciones. Cualquier situación relacionada
+    con la interpretación de las presentes Bases y Condiciones será dirimida por
+    IMMUNE.
+  </p>
+  <p>
+    {data.legal.name} se reserva el derecho, sin responsabilidad alguna, de invalidar
+    o rechazar a los Participantes que, a su solo criterio y discreción, no cumplan
+    con los requisitos establecidos en Las presentes Bases y Condiciones y/o violen
+    derechos de terceros y/o no se apeguen a la legislación aplicable. Asimismo,
+    {data.legal.name} se reserva el derecho de eliminar justificadamente la participación
+    de cualquier Participante que defraude, altere y/o inutilice el buen funcionamiento
+    y el transcurso normal y reglamentario del Concurso. {data.legal.name} se reserva
+    la facultad de excluir a aquellas personas que cometan irregularidades o ilegalidades
+    en su registro y/o participación en el Concurso, así como los mensajes que puedan
+    herir sensibilidades o dañar la imagen de la marca según el criterio de IMMUNE.
+  </p>
+  <h2>OCTAVO. - PROTECCIÓN DE DATOS</h2>
+  <p>
+    En cumplimiento con lo establecido en el artículo 7 y 13 del Reglamento
+    General de Protección de Datos (RGPD) de 27 de abril de 2016, en los
+    artículos 6 y 11 de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección
+    de Datos de Personales y garantía de los derechos digitales (LOPDGDD) y en
+    el artículo 21 de la Ley 34/2002, de Servicios de la Sociedad de la
+    Información y de Comercio Electrónico (LSSICE), {data.legal.company}, con
+    domicilio social en {data.legal.address}, y con C.I.F. número {
+      data.legal.cif
+    }, como organizador del concurso, informa que las personas que se inscriban
+    en el mismo deben proporcionar los siguientes datos de carácter personal
+    (nombre, apellidos, número de teléfono, e-mail y nombre de usuario en la
+    plataforma de retos) a los fines de proceder a su correcta inscripción como
+    participante.
+  </p>
+  <p>
+    Los datos proporcionados serán asociados a una puntuación y unos niveles de
+    conocimientos a los fines de determinar el puesto del concurso y verificar
+    si es o no una persona premiada.
+  </p>
+  <p>
+    Sus datos serán tratados en base a una relación precontractual regulada en
+    el artículo 6.1.b) RGPD.
+  </p>
+  <!--<p>
+    La empresa XXX , con C.I.F XXX y con domicilio en XXX, como empresa
+    proveedora de la plataforma donde se llevará a cabo el concurso (en adelante
+    Immersive Labs), accederá como encargada del tratamiento a sus datos a los
+    fines de servir de soporte a IMMUNE, no obstante, salvo error informático,
+    Immersive Labs no visualizará sus datos.
+  </p>-->
+  <p>
+    En el supuesto de resultar ganador del presente concurso, su nombre y
+    apellidos serán publicado en nuestra página web www.immune.institute a los
+    fines de dar a conocer el resultado de dicho concurso y mostrar la
+    transparencia del mismo. Adicionalmente, previo consentimiento expreso,
+    inequívoco e informado, su imagen será publicada en las plataformas de
+    {data.legal.name} a los fines anteriormente detallados.
+  </p>
+  <p>
+    Al aceptar las presentes Bases y Condiciones, el participante declara haber
+    sido informado y autoriza a {data.legal.name} al tratamiento específico de sus
+    datos el cual resulta necesario para la participación en el Concurso. En cumplimiento
+    del principio de limitación del plazo de conservación.
+  </p>
+  <p>
+    {data.legal.name} se preocupa por garantizar la seguridad, el secreto y la confidencialidad
+    de sus datos, comunicaciones e información personal. Por ello, en cumplimiento
+    de la legislación vigente y como parte de nuestro compromiso, hemos adoptado
+    las más exigentes y robustas medidas de seguridad y medios técnicos y organizativos
+    para garantizar la seguridad de tus datos y evitar su destrucción, pérdida, acceso
+    ilícito o alteración ilícita. A la hora de determinar estas medidas, se han tenido
+    en cuenta criterios como el alcance, el contexto y los fines del tratamiento;
+    el estado de la técnica y los riesgos existentes.
+  </p>
+  <p>
+    {data.legal.name} le informa la posibilidad de ejercitar de forma gratuita los
+    derechos correspondientes (acceso, rectificación, supresión, limitación, oposición,
+    y portabilidad) en nuestras oficinas ubicada en Paseo de la Castellana 89, 28046,
+    Madrid, o enviando un correo electrónico a: central@immune.institute
+  </p>
+  <p>
+    Asimismo, y especialmente cuando el Participante considere que no ha
+    obtenido satisfacción plena en el ejercicio de sus derechos, podrá presentar
+    reclamación ante la Autoridad de Control competente en materia de Protección
+    de Datos que en España es la Agencia Española de Protección de Datos.
+  </p>
+  <h2>NOVENO - LEY Y JURISDICCIÓN APLICABLE</h2>
+  <p>
+    La inscripción de participación implica el conocimiento y la aceptación
+    íntegra de las presentes bases.
+  </p>
+  <p>
+    En caso de controversia entre las partes en relación al presente Concurso,
+    será aplicable la Ley española.
+  </p>
+  <p>
+    Para la resolución de cualquier controversia o discrepancia que pudiera
+    surgir en cuanto a la interpretación o aplicación de las Bases y
+    Condiciones, se someten expresamente a la jurisdicción y competencia de los
+    Juzgados y Tribunales de Madrid (Capital).
   </p>
 </Legal>

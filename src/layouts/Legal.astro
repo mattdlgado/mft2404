@@ -32,6 +32,10 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
 </Layout>
 
 <style is:global>
+  .legal h2 {
+    @apply text-xl font-bold mb-4 border-b border-primary-400 text-primary-400;
+  }
+
   .legal p,
   .legal ul {
     @apply mb-4;
