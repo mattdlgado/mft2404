@@ -2,7 +2,7 @@ var ww = window.innerWidth,
     wh = window.innerHeight;
 
 var renderer = new THREE.WebGLRenderer({
-  canvas: document.getElementById("cube")
+  canvas: document.querySelector("canvas")
 });
 renderer.setSize(ww, wh);
 
