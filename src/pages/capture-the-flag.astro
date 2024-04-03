@@ -9,7 +9,7 @@ import "../styles/ctf-form.css";
 const baseClass = "bg-primary-950/75 text-neutral-50 backdrop-blur",
   buttonClass =
     baseClass +
-    " button inline-block relative p-2 m-2 no-underline before:absolute before:w-4 before:h-4 before:-top-1 before:-left-1 before:border-primary-400 before:border-t before:border-l hover:before:-top-[1px] hover:before:-left-[1px] after:absolute after:w-4 after:h-4 after:-bottom-1 after:-right-1 after:border-primary-400 after:border-b after:border-r hover:after:-bottom-[1px] hover:after:-right-[1px]",
+    " button inline-block relative p-2 my-2 mx-1 no-underline before:absolute before:w-4 before:h-4 before:-top-1 before:-left-1 before:border-primary-400 before:border-t before:border-l hover:before:-top-[1px] hover:before:-left-[1px] after:absolute after:w-4 after:h-4 after:-bottom-1 after:-right-1 after:border-primary-400 after:border-b after:border-r hover:after:-bottom-[1px] hover:after:-right-[1px]",
   dialogClass =
     baseClass +
     " ctf-info w-[90%] max-w-breakpoint max-h-[90dvh] overflow-y-auto border border-primary-400 p-10 fixed z-90 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 opacity-0 invisible transition grid",
@@ -24,8 +24,8 @@ const baseClass = "bg-primary-950/75 text-neutral-50 backdrop-blur",
   robots="index, follow"
   img="https://www.madridfortech.com/ctf-share.webp"
 >
-  <div class="text-neutral-50 w-full min-h-dvh grid gap-10 p-[40px]">
-    <div class="zoomIn flex flex-wrap items-start gap-4 w-full self-start">
+  <div class="text-neutral-50 w-full min-h-dvh grid items-center gap-10 p-[40px]">
+    <div class="zoomIn flex flex-wrap items-center gap-4 w-full self-start">
       <div class="flex items-center gap-4 me-auto">
         <span class="h-12">
           <CaptureTheFlagLogo />
@@ -37,6 +37,41 @@ const baseClass = "bg-primary-950/75 text-neutral-50 backdrop-blur",
           height="40"
           class="h-8"
         />
+      </div>
+      <a href="/" class="w-64">
+        <LogoWhite />
+      </a>
+    </div>
+
+    <main id="main">
+      <div id="options" class="scale-100 transition">
+        <h1 class="text-center">Capture the flag</h1>
+        <h2 class="text-center text-4xl mb-4">
+          ¿En que reto quieres participar?
+        </h2>
+        <div class="flex items-center justify-center gap-4">
+          <button id="ctf-basic" class={buttonClass}>Rookie</button>
+          <button id="ctf-advance" class={buttonClass}>Advance</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="zoomIn flex flex-wrap items-end justify-between gap-4 w-full self-end">
+      <div class="w-full md:w-auto">
+        <div
+          class="w-full md:w-auto bg-primary-950/75 text-neutral-50 backdrop-blur border border-primary-400 p-5 grid gap-2"
+        >
+          <div class="flex justify-between gap-2">
+            <h2>Premios:</h2>
+            <span class="font-bold text-primary-400">750€</span>
+          </div>
+          <p class="max-w-64 text-sm">
+            500€ para el reto advanced y 250€ para el rookie en Tarjetas de
+            regalo de Amazon.
+          </p>
+          <hr>
+          <p>Consulta las <a href="/bases-legales/" target="_blank">Bases legales</a></p>
+        </div>
       </div>
       <div
         class="w-full md:w-auto bg-primary-950/75 text-neutral-50 backdrop-blur border border-primary-400 p-5 grid gap-2"
@@ -58,8 +93,8 @@ const baseClass = "bg-primary-950/75 text-neutral-50 backdrop-blur",
           <img
             src="https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/jaume_baltasar.webp"
             alt="Jaume Baltasar"
-            width="50"
-            height="50"
+            width="80"
+            height="80"
           />
         </div>
         <div class="flex items-center justify-between gap-2">
@@ -70,33 +105,11 @@ const baseClass = "bg-primary-950/75 text-neutral-50 backdrop-blur",
           <img
             src="https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/virginia_santos.webp"
             alt="Jaume Baltasar"
-            width="50"
-            height="50"
+            width="80"
+            height="80"
           />
         </div>
-        <p class="max-w-64 text-sm">Premio de 750€ a repartir entre los dos ganadores: 500€ para el reto
-          advanced y 250€ para el rookie en Tarjetas de regalo de Amazon.</p>
       </div>
-    </div>
-
-    <main id="main">
-      <div id="options" class="scale-100 transition">
-        <h1 class="text-center">Capture the flag</h1>
-        <h2 class="text-center text-4xl mb-4">
-          ¿En que reto quieres participar?
-        </h2>
-        <div class="text-center">
-          <button id="ctf-basic" class={buttonClass}>Rookie</button>
-          <button id="ctf-advance" class={buttonClass}>Advance</button>
-        </div>
-      </div>
-    </main>
-
-    <div class="zoomIn flex items-center justify-between w-full self-end">
-      <a href="/bases-legales/" class={buttonClass}>Bases legales</a>
-      <a href="/" class="w-40">
-        <LogoWhite />
-      </a>
     </div>
   </div>
 
@@ -175,8 +188,8 @@ const baseClass = "bg-primary-950/75 text-neutral-50 backdrop-blur",
 
   .zoomIn {
     opacity: 0;
-    transform: scale(1.5);
-    animation: zoom 500ms ease-in-out 1000ms forwards;
+    transform: scale(0.5);
+    animation: zoom 250ms ease-in-out 750ms forwards;
   }
 
   #options {
