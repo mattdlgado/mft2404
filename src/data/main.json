@@ -82,6 +82,17 @@
       "name": "Virginia Santos",
       "position": "Territory Manager South EMEA",
       "logo": ["immersive_labs-logo.svg", "Immersive Labs"]
+    },
+    {
+      "photo": ["gema_parreno", "Gema Parreño"],
+      "name": "Gema Parreño",
+      "position": "Data Scientist",
+      "logo": ["izertis-logo-white.png", "Izertis"]
+    },
+    {
+      "photo": ["carlos_karliky", "Carlos Hernández Karliky"],
+      "name": "Carlos Hernández Karliky",
+      "position": "Software Developer"
     }
   ]
 }

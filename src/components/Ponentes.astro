@@ -20,17 +20,27 @@ import data from "../data/main.json";
               />
               <div class="glass p-2 w-fit mt-auto bg-neutral-950/50 text-neutral-50">
                 <h3>{item.name}</h3>
-                <p class="mb-4">
-                  <small>{item.position}</small>
-                </p>
-                <img
-                  src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/${item.logo[0]}`}
-                  alt={item.logo[1]}
-                  height="20"
-                  width="144"
-                  class="h-5 w-fit object-contain object-left"
-                  loading="lazy"
-                />
+                {item.logo ? (
+                  <>
+                    <p class="mb-4">
+                      <small>{item.position}</small>
+                    </p>
+                    <img
+                      src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/${item.logo[0]}`}
+                      alt={item.logo[1]}
+                      height="20"
+                      width="144"
+                      class="h-5 w-fit object-contain object-left"
+                      loading="lazy"
+                    />
+                  </>
+                ) : (
+                  <>
+                    <p>
+                      <small>{item.position}</small>
+                    </p>
+                  </>
+                )}
               </div>
             </div>
           </>
