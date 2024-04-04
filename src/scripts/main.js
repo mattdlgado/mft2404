@@ -38,8 +38,7 @@ const iconsTimeline = gsap.timeline({
     trigger: ".ponentes",
     start: "top bottom",
     end: "top center",
-    scrub: true,
-    markers: true
+    scrub: true
   },
 });
 gsap.set(".swiper-slide", { opacity: 1, y: 0 });
