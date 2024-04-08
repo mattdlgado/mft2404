@@ -1,0 +1,25 @@
+---
+interface Props {
+    cols?: boolean;
+}
+
+const { cols } = Astro.props;
+const sectionClass =
+    "bg-neutral-50 py-20 border-t border-t-primary-400";
+---
+
+{
+    cols ? (
+        <section class={sectionClass}>
+            <div class="page cols">
+                <slot />
+            </div>
+        </section>
+    ) : (
+        <section class={sectionClass}>
+            <div class="page">
+                <slot />
+            </div>
+        </section>
+    )
+}

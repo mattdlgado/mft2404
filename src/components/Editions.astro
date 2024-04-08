@@ -1,0 +1,53 @@
+---
+import data from "../data/main.json";
+---
+
+<section
+    class="bg-neutral-50 border-t border-t-primary-400 md:grid md:items-center"
+>
+    <div class="px-3 py-20 md:col-start-2">
+        <h2>Madrid como Hub de talento Tech</h2>
+        <p>
+            El evento definitivo de generación de empleo y oportunidades
+            vinculadas a la innovación y tecnología. Dirigido a los interesados
+            en conocer el presente del sector tech, a quienes buscan empleo y
+            quieren poner a prueba sus habilidades y a los que quieren
+            reorientar su carrera en:
+        </p>
+        <ul class="font-bold">
+            {data.programs.map((item) => <li>{item}</li>)}
+        </ul>
+    </div>
+    <div class="swiper images w-full md:col-span-2">
+        <div class="swiper-wrapper">
+            {
+                data.images.map(
+                    (item: { src: string; alt: string; size: number[] }) => (
+                        <>
+                            <div class="swiper-slide">
+                                <img
+                                    src={item.src}
+                                    alt={item.alt}
+                                    width={item.size[0]}
+                                    height={item.size[1]}
+                                    class="w-full select-none"
+                                />
+                            </div>
+                        </>
+                    ),
+                )
+            }
+        </div>
+        <div class="swiper-pagination images-pagination"></div>
+    </div>
+</section>
+
+<style>
+    @media (min-width: theme(spacing.breakpoint)) {
+        section {
+            grid-template-columns: 1fr calc(
+                    min(100%, theme(spacing.desktop)) / 2
+                ) calc(min(100%, theme(spacing.desktop)) / 2) 1fr;
+        }
+    }
+</style>

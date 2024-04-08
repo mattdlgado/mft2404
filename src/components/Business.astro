@@ -1,0 +1,47 @@
+---
+import data from "../data/main.json";
+import Section from "./Section.astro";
+---
+
+<Section cols>
+    <div>
+      <h2>Empresas colaboradoras</h2>
+      <p>
+        <strong>Madrid4tech</strong> regresa este <strong>{data.date}</strong>
+        en su {data.edition} edición, reuniendo a las empresas líderes en tecnología
+        y a los profesionales más brillantes en un evento interactivo y dinámico.
+      </p>
+      <p>
+        Con el objetivo de forjar conexiones significativas entre empresas
+        innovadoras y talentos emergentes, este evento es una oportunidad única
+        para aquellos especializados en {
+          data.programs.map((item) => <strong>{item}, </strong>)
+        } enorgulleciendonos contar con la participación de reconocidas empresas
+        del sector tecnológico, las cuales están en búsqueda activa de profesionales
+        apasionados y con ganas de transformar el futuro.
+      </p>
+      <p>
+        Estas organizaciones son pioneras en sus respectivos campos, ofreciendo
+        no solo oportunidades de empleo sino también la posibilidad de trabajar
+        en proyectos vanguardistas y soluciones innovadoras.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-2">
+      {
+        data.business.map((item: { src: string; alt: string; size: number[] }) => (
+          <>
+            <div class="border border-neutral-400 grid place-items-center py-8 px-4">
+              <img
+                src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/${item.src}`}
+                alt={item.alt}
+                width={item.size[0]}
+                height={item.size[1]}
+              />
+              <h3 class="text-neutral-400">{item.alt}</h3>
+            </div>
+          </>
+        ))
+      }
+    </div>
+  </Section>

@@ -1,23 +1,95 @@
 ---
-import CTF from "../components/CTF.astro";
-import Footer from "../components/Footer.astro";
-import Ponentes2 from "../components/Ponentes2.astro";
-import Pre from "../components/Pre.astro";
+import data from "../data/main.json";
 import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Ponentes from "../components/Ponentes.astro";
+import Agenda from "../components/Agenda.astro";
+import Card from "../components/Card.astro";
+import Section from "../components/Section.astro";
+import Footer from "../components/Footer.astro";
+import CTF from "../components/CTF.astro";
+import Business from "../components/Business.astro";
+import Editions from "../components/Editions.astro";
 ---
 
 <Layout
   title="Madrid4Tech"
   description="Evento Madrid4Tech organizado por IMMUNE Technology Institute para unir empresas y profesionales de la tecnología."
-  keywords="madridfortech, madrid4ech, evento, tecnología"
-  canonical="https://www.madridfortech.com/"
-  robots="index, follow"
-  img="https://www.madridfortech.com/share.webp"
+  keywords="immune, evento, tecnología"
+  canonical="https://www.madridfortech.immune.institute/"
+  robots="noindex, nofollow"
+  img="https://www.madridfortech.immune.institute/share.webp"
 >
-  <Pre />
-  <Ponentes2 />
+  <Hero edition={data.edition} date={data.date} />
+
+  <Ponentes />
+
   <CTF />
+
+  <Business />
+
+  <Agenda />
+
+  <Editions />
+
+  <Section>
+    <h2>¿Donde?</h2>
+    <p>
+      El campus de IMMUNE Technology Institute es un hub generador de talento en
+      el sector tecnológico europeo que se constituyó en Madrid en 2019. Plaza
+      Pablo Ruiz Picasso, P.º de la Castellana, 89, Madrid.
+    </p>
+    <img
+      src="/campus.webp"
+      alt="Mapa del campus"
+      loading="lazy"
+      width="1920"
+      height="852"
+      style="height: auto;"
+    />
+  </Section>
+
+  <section class="py-20 border-t border-t-primary-400">
+    <div class="page">
+      <h2>Audiencia</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-2">
+        <Card number={35} type="Junior" age="0 a 3">
+          <p>
+            Talento Junior con su etapa formativa finalizada -o realizando
+            posgrado- que ya han tenido algunas experiencias profesionales y
+            seguir adquiriendo conocimiento en las primeras etapas de su carrera
+            profesional.
+          </p>
+        </Card>
+        <Card number={45} type="Intermedio" age="3 a 8">
+          <p>
+            Talento Intermedio con algunos años de experiencia que desean seguir
+            creciendo en sus carreras profesionales asumiendo mayor
+            responsabilidad y nuevos desafíos tecnológicos.
+          </p>
+        </Card>
+        <Card number={20} type="Experimentado" age=">8">
+          <p>
+            Talento Experimentado que desea elevar su nivel de responsabilidad,
+            gestionando equipos o bien a través de procesos de upskilling y
+            reskilling que les permitan situarse de forma más competitiva.
+          </p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
   <Footer />
+
+  <video
+    class="h-screen w-full object-cover fixed -z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+    autoplay
+    loop
+    muted
+    playsinline
+  >
+    <source src="/m4t-hero-video-background.mp4" type="video/mp4" />
+  </video>
 </Layout>
 
 <script src="../scripts/main.js"></script>

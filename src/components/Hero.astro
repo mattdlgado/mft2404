@@ -1,5 +1,4 @@
 ---
-import data from "../data/main.json";
 import Badge from "./Badge.astro";
 import Countdown from "./Countdown.astro";
 import Form from "./Form.astro";
@@ -8,29 +7,26 @@ import Clock from "./icons/Clock.astro";
 import Immune from "./icons/Immune.astro";
 import LogoWhite from "./icons/LogoWhite.astro";
 import MapPin from "./icons/MapPin.astro";
+
+interface Props {
+  edition: string;
+  date: string;
+}
+
+const { edition, date } = Astro.props;
 ---
 
-<video
-  class="h-screen w-full object-cover fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-  autoplay
-  loop
-  muted
-  playsinline
->
-  <source src="/m4t-hero-video-background.mp4" type="video/mp4" />
-</video>
-
-<main class="text-neutral-50 min-h-dvh grid place-items-center py-20">
-  <div class="page cols items-center" data-cols="2">
+<main class="text-neutral-50 grid place-items-center py-20">
+  <div class="page cols">
     <div>
-      <span class="block mb-2">
+      <span class="block mb-4">
         <Immune />
       </span>
       <LogoWhite />
       <h1 class="font-bold text-2xl my-4">
-        {data.edition} EDICIÓN <br />ENCUENTRO DE TALENTO TECNOLÓGICO
+        {edition} EDICIÓN <br />ENCUENTRO DE TALENTO TECNOLÓGICO
       </h1>
-      <Badge text={data.date}>
+      <Badge text={date}>
         <CalendarEvent />
       </Badge>
       <Badge text="Mañana y tarde">

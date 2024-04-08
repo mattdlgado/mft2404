@@ -7,7 +7,10 @@
     "email": "central@immune.institute",
     "address": "Paseo de la Castellana 89, planta baja inferior, local 3, puerta 2, Madrid 28046"
   },
-  "cta": ["¡APÚNTATE!", "#"],
+  "cta": [
+    "¡APÚNTATE!",
+    "#"
+  ],
   "edition": "IV",
   "programs": [
     "Data Science",
@@ -20,83 +23,219 @@
   "date": "17 de abril",
   "business": [
     {
-      "src": "/bbva_next_technologies-logo.webp",
-      "alt": "BBVA Next Technologies",
-      "size": [187, 55]
+      "src": "singular_solving-logo.svg",
+      "alt": "Singular Solving",
+      "size": [
+        144,
+        40
+      ]
     },
     {
-      "src": "/iberdrola_espana-logo.svg",
-      "alt": "Iberdrola",
-      "size": [147, 55]
+      "src": "entaina-logo.webp",
+      "alt": "Entaina",
+      "size": [
+        144,
+        40
+      ]
     },
     {
-      "src": "/caixabank_tech-logo.webp",
-      "alt": "Caixabank Tech",
-      "size": [219, 55]
+      "src": "leemons-logo.svg",
+      "alt": "Leemons",
+      "size": [
+        144,
+        40
+      ]
     },
     {
-      "src": "/hp_scds-logo.svg",
-      "alt": "HP SCDS",
-      "size": [149, 55]
+      "src": "immersive_labs-logo.svg",
+      "alt": "Immersive Labs",
+      "size": [
+        144,
+        40
+      ]
     },
     {
-      "src": "/sanitas-logo.svg",
-      "alt": "Sanitas",
-      "size": [55, 55]
+      "src": "izertis-logo.webp",
+      "alt": "Izertis",
+      "size": [
+        144,
+        40
+      ]
     }
   ],
   "people": [
     {
-      "photo": ["raul_marin", "Raúl Marín"],
+      "photo": [
+        "raul_marin",
+        "Raúl Marín"
+      ],
       "name": "Raúl Marín",
       "position": "Head teacher UX/UI",
-      "logo": ["immune-logo-white.svg", "IMMUNE Technology Institute"]
+      "logo": [
+        "immune-logo-white.svg",
+        "IMMUNE Technology Institute"
+      ]
     },
     {
-      "photo": ["javier_recuenco", "Javier Recuenco"],
+      "photo": [
+        "javier_recuenco",
+        "Javier Recuenco"
+      ],
       "name": "Javier Recuenco",
       "position": "CSO & Founder",
-      "logo": ["singular_solving-logo.svg", "Singular Solving"]
+      "logo": [
+        "singular_solving-logo.svg",
+        "Singular Solving"
+      ]
     },
-
     {
-      "photo": ["agustin_cuenca", "Agustin Cuenca"],
+      "photo": [
+        "agustin_cuenca",
+        "Agustin Cuenca"
+      ],
       "name": "Agustin Cuenca",
       "position": "CEO & Founder",
-      "logo": ["entaina-logo.webp", "Entaina"]
+      "logo": [
+        "entaina-logo.webp",
+        "Entaina"
+      ]
     },
     {
-      "photo": ["lula_leon", "Lula de León"],
+      "photo": [
+        "lula_leon",
+        "Lula de León"
+      ],
       "name": "Lula de León",
       "position": "CEO",
-      "logo": ["leemons-logo-white.svg", "Leemons"]
+      "logo": [
+        "leemons-logo-white.svg",
+        "Leemons"
+      ]
     },
     {
-      "photo": ["jaume_baltasar", "Jaume Baltasar"],
+      "photo": [
+        "jaume_baltasar",
+        "Jaume Baltasar"
+      ],
       "name": "Jaume Baltasar",
       "position": "Solutions Consultant",
-      "logo": ["immersive_labs-logo.svg", "Immersive Labs"]
+      "logo": [
+        "immersive_labs-logo-white.svg",
+        "Immersive Labs"
+      ]
     },
     {
-      "photo": ["virginia_santos", "Virginia Santos"],
+      "photo": [
+        "virginia_santos",
+        "Virginia Santos"
+      ],
       "name": "Virginia Santos",
       "position": "Territory Manager South EMEA",
-      "logo": ["immersive_labs-logo.svg", "Immersive Labs"]
+      "logo": [
+        "immersive_labs-logo-white.svg",
+        "Immersive Labs"
+      ]
     },
     {
-      "photo": ["gema_parreno", "Gema Parreño"],
+      "photo": [
+        "gema_parreno",
+        "Gema Parreño"
+      ],
       "name": "Gema Parreño",
       "position": "Data Scientist",
-      "logo": ["izertis-logo-white.png", "Izertis"]
+      "logo": [
+        "izertis-logo-white.webp",
+        "Izertis"
+      ]
     },
     {
-      "photo": ["carlos_karliky", "Carlos Hernández Karliky"],
+      "photo": [
+        "carlos_karliky",
+        "Carlos Hernández Karliky"
+      ],
       "name": "Carlos Hernández Karliky",
-      "position": "Software Developer"
+      "position": "Research Scientist"
     },
     {
-      "photo": ["alejandro_corletti", "Alejandro Corletti"],
-      "name": "Alejandro Corletti"
+      "photo": [
+        "alejandro_corletti",
+        "Alejandro Corletti"
+      ],
+      "name": "Alejandro Corletti",
+      "logo": [
+        "darfe-logo.webp",
+        "Darfe"
+      ]
+    },
+    {
+      "photo": [
+        "elena_bueno",
+        "Elena Bueno"
+      ],
+      "name": "Elena Bueno",
+      "position": "Big Data Engineer",
+      "logo": [
+        "bbva_technology-logo.webp",
+        "BBVA Technology"
+      ]
+    },
+    {
+      "photo": [
+        "diego_anael",
+        "Diego Anael Fava"
+      ],
+      "name": "Diego Anael Fava",
+      "position": "Data Engineer & Business & AI",
+      "logo": [
+        "bbva_technology-logo.webp",
+        "BBVA Technology"
+      ]
+    },
+    {
+      "photo": [
+        "julio_gomez",
+        "Julio Gómez"
+      ],
+      "name": "Julio Gómez",
+      "position": "Junior Product and Program Manager, Academic Alliance.",
+      "logo": [
+        "celonis-logo.svg",
+        "Celonis"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/m4t23_1.webp",
+      "alt": "Madridfortech 2023 1",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "src": "/images/m4t23_2.webp",
+      "alt": "Madridfortech 2023 2",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "src": "/images/m4t23_3.webp",
+      "alt": "Madridfortech 2023 3",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "src": "/images/m4t23_4.webp",
+      "alt": "Madridfortech 2023 4",
+      "size": [
+        512,
+        512
+      ]
     }
   ]
 }

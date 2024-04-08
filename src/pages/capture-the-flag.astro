@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Cube from "../components/Cube.astro";
+import Cube from "../components/ctf/Cube.astro";
 import CaptureTheFlagLogo from "../components/icons/CaptureTheFlagLogo.astro";
 import LogoWhite from "../components/icons/LogoWhite.astro";
 
@@ -22,7 +22,7 @@ const baseClass = "bg-primary-950/75 text-neutral-50 backdrop-blur",
   keywords="madridfortech, madrid4ech, evento, tecnología"
   canonical="https://www.madridfortech.com/"
   robots="index, follow"
-  img="https://www.madridfortech.com/ctf-share.webp"
+  img="https://www.madridfortech.com/ctf/share.webp"
 >
   <div class="text-neutral-50 w-full min-h-dvh grid items-center gap-10 p-[40px]">
     <div class="zoomIn flex flex-wrap items-center gap-4 w-full self-start">
@@ -46,7 +46,7 @@ const baseClass = "bg-primary-950/75 text-neutral-50 backdrop-blur",
     <main id="main">
       <div id="options" class="scale-100 transition">
         <h1 class="text-center">Capture the flag</h1>
-        <h2 class="text-center text-4xl mb-4">
+        <h2 class="reset text-center text-4xl mb-4">
           ¿En que reto quieres participar?
         </h2>
         <div class="flex items-center justify-center gap-4">
@@ -62,7 +62,7 @@ const baseClass = "bg-primary-950/75 text-neutral-50 backdrop-blur",
           class="w-full md:w-auto bg-primary-950/75 text-neutral-50 backdrop-blur border border-primary-400 p-5 grid gap-2"
         >
           <div class="flex justify-between gap-2">
-            <h2>Premios:</h2>
+            <h2 class="reset">Premios:</h2>
             <span class="font-bold text-primary-400">750€</span>
           </div>
           <p class="max-w-64 text-sm">
@@ -77,7 +77,7 @@ const baseClass = "bg-primary-950/75 text-neutral-50 backdrop-blur",
         class="w-full md:w-auto bg-primary-950/75 text-neutral-50 backdrop-blur border border-primary-400 p-5 grid gap-2"
       >
         <div class="flex justify-between gap-2">
-          <h2>Mentores:</h2>
+          <h2 class="reset">Mentores:</h2>
           <img
             src="https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/immersive_labs-logo.svg"
             alt="Immersive labs logo"
@@ -85,9 +85,9 @@ const baseClass = "bg-primary-950/75 text-neutral-50 backdrop-blur",
             height="20"
           />
         </div>
-        <div class="flex items-center justify-between gap-2">
+        <div class="flex items-center justify-between gap-4">
           <div>
-            <h2>Jaume Baltasar</h2>
+            <h2 class="reset text-xl">Jaume Baltasar</h2>
             <small>Solutions Consultant</small>
           </div>
           <img
@@ -97,9 +97,9 @@ const baseClass = "bg-primary-950/75 text-neutral-50 backdrop-blur",
             height="80"
           />
         </div>
-        <div class="flex items-center justify-between gap-2">
+        <div class="flex items-center justify-between gap-4">
           <div>
-            <h2>Virginia Santos</h2>
+            <h2 class="reset text-xl">Virginia Santos</h2>
             <small>Territory Manager South EMEA</small>
           </div>
           <img

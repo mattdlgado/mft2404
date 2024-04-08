@@ -35,6 +35,10 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
   <body class="bg-primary-950 font-body overflow-x-hidden min-h-dvh">
     <slot />
     <style is:global>
+      :root {
+        --swiper-theme-color: theme(colors.primary.400) !important;
+      }
+
       /** Scrollbar */
       ::-webkit-scrollbar {
         @apply w-2;
@@ -57,7 +61,7 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
       .glass {
         -webkit-backdrop-filter: blur(40px);
         backdrop-filter: blur(40px);
-        @apply border border-neutral-50/10;
+        @apply relative border border-neutral-50/10;
       }
 
       .page,
@@ -70,8 +74,9 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
       }
 
       .cols {
+        --cols: 2;
         --gap: theme(spacing.10);
-        @apply grid;
+        @apply grid items-center;
 
         grid-template-columns: repeat(
           auto-fit,
@@ -91,16 +96,24 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
         gap: var(--gap);
       }
 
-      .cols[data-cols="2"] {
-        --cols: 2;
-      }
-
       .cols[data-cols="3"] {
         --cols: 3;
       }
 
       .cols[data-cols="4"] {
         --cols: 4;
+      }
+
+      .cols[data-cols="5"] {
+        --cols: 5;
+      }
+
+      h2:not(.reset) {
+        @apply text-4xl font-bold text-primary-400 mb-4;
+      }
+
+      p:not(.reset) {
+        @apply mb-4;
       }
 
       @keyframes fadeIn {
