@@ -21,9 +21,11 @@ import data from "../data/main.json";
               <h3>{item.name}</h3>
               {item.logo ? (
                 <>
-                  <p class="mb-4">
-                    <small>{item.position}</small>
-                  </p>
+                  {item.position && (
+                    <p class="mb-4">
+                      <small>{item.position}</small>
+                    </p>
+                  )}
                   <img
                     src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/${item.logo[0]}`}
                     alt={item.logo[1]}
@@ -35,9 +37,11 @@ import data from "../data/main.json";
                 </>
               ) : (
                 <>
-                  <p>
-                    <small>{item.position}</small>
-                  </p>
+                  {item.position && (
+                    <p class="mb-4">
+                      <small>{item.position}</small>
+                    </p>
+                  )}
                 </>
               )}
             </div>

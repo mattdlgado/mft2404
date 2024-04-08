@@ -93,6 +93,10 @@
       "photo": ["carlos_karliky", "Carlos Hernández Karliky"],
       "name": "Carlos Hernández Karliky",
       "position": "Software Developer"
+    },
+    {
+      "photo": ["alejandro_corletti", "Alejandro Corletti"],
+      "name": "Alejandro Corletti"
     }
   ]
 }
