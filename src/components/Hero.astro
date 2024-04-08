@@ -16,7 +16,9 @@ interface Props {
 const { edition, date } = Astro.props;
 ---
 
-<main class="text-neutral-50 grid place-items-center py-20">
+<main
+  class="text-neutral-50 grid place-items-center py-20 md:pt-40 md:pb-20"
+>
   <div class="page cols">
     <div>
       <span class="block mb-4">
@@ -41,15 +43,3 @@ const { edition, date } = Astro.props;
     <Form id="b7bfe983-7d9e-438e-ab6b-21ea3afd616c" />
   </div>
 </main>
-
-<style>
-  video {
-    opacity: 0;
-    animation: fadeIn 1000ms ease-in-out forwards;
-  }
-
-  main {
-    opacity: 0;
-    animation: fadeIn 1000ms ease-in-out forwards 500ms;
-  }
-</style>

@@ -4,11 +4,11 @@ import data from "../data/main.json";
 
 <section class="ponentes page py-20">
   <h2>Ponentes confirmados</h2>
-  <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
     {
       data.people.map((item) => (
         <>
-          <div class="relative min-h-96 flex flex-col p-4">
+          <div class="relative min-h-80 flex flex-col p-4">
             <img
               src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/${item.photo[0]}.webp`}
               alt={item.photo[1]}
@@ -43,10 +43,3 @@ import data from "../data/main.json";
     }
   </div>
 </section>
-
-<style>
-  section {
-    opacity: 0;
-    animation: fadeIn 1000ms ease-in-out forwards 750ms;
-  }
-</style>

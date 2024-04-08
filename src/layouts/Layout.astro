@@ -59,9 +59,7 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
       }
 
       .glass {
-        -webkit-backdrop-filter: blur(40px);
-        backdrop-filter: blur(40px);
-        @apply relative border border-neutral-50/10;
+        @apply border border-neutral-50/10 backdrop-blur-xl;
       }
 
       .page,

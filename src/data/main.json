@@ -34,7 +34,7 @@
       "src": "entaina-logo.webp",
       "alt": "Entaina",
       "size": [
-        144,
+        200,
         40
       ]
     },
@@ -42,7 +42,7 @@
       "src": "leemons-logo.svg",
       "alt": "Leemons",
       "size": [
-        144,
+        200,
         40
       ]
     },
@@ -50,7 +50,7 @@
       "src": "immersive_labs-logo.svg",
       "alt": "Immersive Labs",
       "size": [
-        144,
+        240,
         40
       ]
     },
