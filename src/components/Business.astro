@@ -31,14 +31,14 @@ import Section from "./Section.astro";
       {
         data.business.map((item: { src: string; alt: string; size: number[] }) => (
           <>
-            <div class="border border-neutral-400 grid place-items-center py-8 px-4">
+            <div class="border border-neutral-400 grid place-items-center p-5">
               <img
                 src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/${item.src}`}
                 alt={item.alt}
                 width={item.size[0]}
                 height={item.size[1]}
               />
-              <h3 class="text-neutral-400">{item.alt}</h3>
+              <h3 class="text-neutral-400 self-end">{item.alt}</h3>
             </div>
           </>
         ))
