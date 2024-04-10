@@ -27,17 +27,17 @@ import Section from "./Section.astro";
       </p>
     </div>
 
-    <div class="grid sm:grid-cols-3 gap-1">
+    <div class="business grid sm:grid-cols-2 lg:grid-cols-3 gap-1">
       {
         data.business.map((item: { src: string; alt: string; size: number[] }) => (
           <>
-            <div class="grid place-items-center p-5 relative overflow-hidden">
+            <div class="flex flex-col items-center justify-center p-5 relative overflow-hidden">
               <img
                 src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/${item.src}`}
                 alt={item.alt}
                 width={item.size[0]}
                 height={item.size[1]}
-                class="absolute blur-3xl"
+                class="absolute blur-3xl hover:blur-xl transition"
               />
               <img
                 src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/${item.src}`}
@@ -45,7 +45,7 @@ import Section from "./Section.astro";
                 width={item.size[0]}
                 height={item.size[1]}
               />
-              <h3 class="text-neutral-300 self-end">{item.alt}</h3>
+              <h3 class="text-neutral-300">{item.alt}</h3>
             </div>
           </>
         ))
