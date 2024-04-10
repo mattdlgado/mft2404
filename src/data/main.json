@@ -19,243 +19,186 @@
   ],
   "people": [
     {
-      "photo": [
-        "raul_marin",
-        "Raúl Marín"
-      ],
+      "photo": "raul_marin",
       "name": "Raúl Marín",
       "position": "Head teacher UX/UI",
-      "logo": [
-        "immune-logo-white.svg",
-        "IMMUNE Technology Institute"
-      ]
+      "logo": ["immune-logo.svg", "IMMUNE Technology Institute"]
     },
     {
-      "photo": [
-        "javier_recuenco",
-        "Javier Recuenco"
-      ],
+      "photo": "javier_recuenco",
       "name": "Javier Recuenco",
       "position": "CSO & Founder",
-      "logo": [
-        "singular_solving-logo.svg",
-        "Singular Solving"
-      ]
+      "logo": ["singular_solving-logo.svg", "Singular Solving"]
     },
     {
-      "photo": [
-        "agustin_cuenca",
-        "Agustin Cuenca"
-      ],
+      "photo": "agustin_cuenca",
       "name": "Agustin Cuenca",
       "position": "CEO & Founder",
-      "logo": [
-        "entaina-logo.webp",
-        "Entaina"
-      ]
+      "logo": ["entaina-logo.webp", "Entaina"]
     },
     {
-      "photo": [
-        "lula_leon",
-        "Lula de León"
-      ],
+      "photo": "lula_leon",
       "name": "Lula de León",
       "position": "CEO",
-      "logo": [
-        "leemons-logo-white.svg",
-        "Leemons"
-      ]
+      "logo": ["leemons-logo.svg", "Leemons"]
     },
     {
-      "photo": [
-        "jaume_baltasar",
-        "Jaume Baltasar"
-      ],
+      "photo": "jaume_baltasar",
       "name": "Jaume Baltasar",
       "position": "Solutions Consultant",
-      "logo": [
-        "immersive_labs-logo-white.svg",
-        "Immersive Labs"
-      ]
+      "logo": ["immersive_labs-logo.svg", "Immersive Labs"]
     },
     {
-      "photo": [
-        "virginia_santos",
-        "Virginia Santos"
-      ],
+      "photo": "virginia_santos",
       "name": "Virginia Santos",
       "position": "Territory Manager South EMEA",
-      "logo": [
-        "immersive_labs-logo-white.svg",
-        "Immersive Labs"
-      ]
+      "logo": ["immersive_labs-logo.svg", "Immersive Labs"]
     },
     {
-      "photo": [
-        "gema_parreno",
-        "Gema Parreño"
-      ],
+      "photo": "gema_parreno",
       "name": "Gema Parreño",
       "position": "Data Scientist",
-      "logo": [
-        "izertis-logo-white.webp",
-        "Izertis"
-      ]
+      "logo": ["izertis-logo.webp", "Izertis"]
     },
     {
-      "photo": [
-        "carlos_karliky",
-        "Carlos Hernández Karliky"
-      ],
+      "photo": "carlos_karliky",
       "name": "Carlos Hernández Karliky",
       "position": "Research Scientist"
     },
     {
-      "photo": [
-        "alejandro_corletti",
-        "Alejandro Corletti"
-      ],
+      "photo": "alejandro_corletti",
       "name": "Alejandro Corletti",
-      "logo": [
-        "darfe-logo.webp",
-        "Darfe"
-      ]
+      "logo": ["darfe-logo.webp", "Darfe"]
     },
     {
-      "photo": [
-        "elena_bueno",
-        "Elena Bueno"
-      ],
+      "photo": "elena_bueno",
       "name": "Elena Bueno",
       "position": "Big Data Engineer",
-      "logo": [
-        "bbva_technology-logo.webp",
-        "BBVA Technology"
-      ]
+      "logo": ["bbva_technology-logo.webp", "BBVA Technology"]
     },
     {
-      "photo": [
-        "diego_anael",
-        "Diego Anael Fava"
-      ],
+      "photo": "diego_anael",
       "name": "Diego Anael Fava",
       "position": "Data Engineer & Business & AI",
-      "logo": [
-        "bbva_technology-logo.webp",
-        "BBVA Technology"
-      ]
+      "logo": ["bbva_technology-logo.webp", "BBVA Technology"]
     },
     {
-      "photo": [
-        "julio_gomez",
-        "Julio Gómez"
-      ],
+      "photo": "julio_gomez",
       "name": "Julio Gómez",
       "position": "Junior Product and Program Manager, Academic Alliance.",
-      "logo": [
-        "celonis-logo-white.svg",
-        "Celonis"
-      ]
+      "logo": ["celonis-logo.webp", "Celonis"]
+    },
+    {
+      "photo": "javier_munoz",
+      "name": "Javier Muñoz",
+      "position": "IAM Team Lead",
+      "logo": ["swiss_re-logo.svg", "Swiss Re"]
+    },
+    {
+      "photo": "bernat_canadell",
+      "name": "Bernat Canadell",
+      "position": "Cyber Defence Engineering Lead",
+      "logo": ["swiss_re-logo.svg", "Swiss Re"]
+    },
+    {
+      "photo": "cesar_antonio_restrepo",
+      "name": "César Antonio Restrepo",
+      "position": "Big Data Consultant | Data engineer | Cloud Architect",
+      "logo": ["mercedes_benz-logo.svg", "Mercedes Benz"]
     }
   ],
   "business": [
     {
+      "src": "bbva_technology-logo.webp",
+      "alt": "BBVA Technology",
+      "size": [144, 40]
+    },
+    {
+      "src": "swiss_re-logo.svg",
+      "alt": "Swiss Re",
+      "size": [160, 40]
+    },
+    {
       "src": "singular_solving-logo.svg",
       "alt": "Singular Solving",
-      "size": [
-        144,
-        40
-      ]
+      "size": [120, 40]
     },
     {
       "src": "entaina-logo.webp",
       "alt": "Entaina",
-      "size": [
-        200,
-        40
-      ]
+      "size": [160, 40]
     },
     {
       "src": "leemons-logo.svg",
       "alt": "Leemons",
-      "size": [
-        200,
-        40
-      ]
+      "size": [180, 40]
     },
     {
       "src": "immersive_labs-logo.svg",
       "alt": "Immersive Labs",
-      "size": [
-        240,
-        40
-      ]
+      "size": [220, 40]
     },
     {
       "src": "izertis-logo.webp",
       "alt": "Izertis",
-      "size": [
-        144,
-        40
-      ]
+      "size": [120, 40]
     },
     {
       "src": "darfe-logo.webp",
       "alt": "Darfe",
-      "size": [
-        60,
-        40
-      ]
-    },
-    {
-      "src": "bbva_technology-logo.webp",
-      "alt": "BBVA Technology",
-      "size": [
-        144,
-        40
-      ]
+      "size": [60, 40]
     },
     {
       "src": "celonis-logo.webp",
       "alt": "Celonis",
-      "size": [
-        144,
-        40
-      ]
+      "size": [120, 40]
+    },
+    {
+      "src": "santander-logo.svg",
+      "alt": "Santander",
+      "size": [200, 40]
+    },
+    {
+      "src": "incibe_emprende-logo.webp",
+      "alt": "Incibe Emprende",
+      "size": [144, 40]
+    },
+    {
+      "src": "unicef-logo.webp",
+      "alt": "Unicef",
+      "size": [144, 40]
+    },
+    {
+      "src": "mercedes_benz-logo.svg",
+      "alt": "Mercedes Benz",
+      "size": [160, 40]
+    },
+    {
+      "src": "talentoo-logo.webp",
+      "alt": "Talentoo",
+      "size": [144, 40]
     }
   ],
   "images": [
     {
       "src": "/images/m4t23_1.webp",
       "alt": "Madridfortech 2023 1",
-      "size": [
-        512,
-        512
-      ]
+      "size": [512, 512]
     },
     {
       "src": "/images/m4t23_2.webp",
       "alt": "Madridfortech 2023 2",
-      "size": [
-        512,
-        512
-      ]
+      "size": [512, 512]
     },
     {
       "src": "/images/m4t23_3.webp",
       "alt": "Madridfortech 2023 3",
-      "size": [
-        512,
-        512
-      ]
+      "size": [512, 512]
     },
     {
       "src": "/images/m4t23_4.webp",
       "alt": "Madridfortech 2023 4",
-      "size": [
-        512,
-        512
-      ]
+      "size": [512, 512]
     }
   ]
 }

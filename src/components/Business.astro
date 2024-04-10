@@ -27,11 +27,11 @@ import Section from "./Section.astro";
       </p>
     </div>
 
-    <div class="grid sm:grid-cols-2 gap-2">
+    <div class="grid sm:grid-cols-3 gap-2">
       {
         data.business.map((item: { src: string; alt: string; size: number[] }) => (
           <>
-            <div class="border border-neutral-400 grid place-items-center p-5">
+            <div class="border border-neutral-100 grid place-items-center p-5">
               <img
                 src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/${item.src}`}
                 alt={item.alt}

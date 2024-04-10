@@ -8,10 +8,10 @@ import data from "../data/main.json";
     {
       data.people.map((item) => (
         <>
-          <div class="relative min-h-80 flex flex-col p-4">
+          <div class="relative min-h-80 flex flex-col">
             <img
-              src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/${item.photo[0]}.webp`}
-              alt={item.photo[1]}
+              src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/${item.photo}.webp`}
+              alt={item.name}
               height="256"
               width="256"
               class="absolute top-0 left-0 w-full h-full object-cover"
@@ -24,7 +24,7 @@ import data from "../data/main.json";
                   alt={item.logo[1]}
                   height="20"
                   width="144"
-                  class="glass p-2 w-fit h-5 box-content object-contain object-left bg-neutral-950/50 text-neutral-50 z-10 self-end"
+                  class="glass p-2 w-auto h-6 box-content object-contain object-left bg-neutral-50 text-neutral-50 z-10 self-end"
                   loading="lazy"
                 />
               </>
