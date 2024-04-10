@@ -8,56 +8,67 @@ import Section from "./Section.astro";
     <table
       class="border border-neutral-400 h-full w-full table-auto border-spacing-px text-left border-collapse"
     >
-      <caption class="text-left mt-2 text-neutral-400">* La agenda puede sufrir cambios.</caption
+      <caption class="text-left mt-2 text-neutral-400"
+        >* La agenda puede sufrir cambios.</caption
       >
       <thead>
+        <tr>
+          <th></th>
+          <th colspan="2" style="width: 50%;">ESPACIO 1</th>
+          <th colspan="2" style="width: 50%;">ESPACIO 2</th>
+        </tr>
         <tr>
           <th>HORARIO</th>
           <th>CONTENIDO</th>
           <th>PONENTES</th>
-          <th>ESPACIO IMMUNE</th>
+          <th>CONTENIDO</th>
+          <th>PONENTES</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>9:45 - 10:00h.</td>
-          <td colspan="2">Bienvenida</td>
-          <td>Ágora</td>
+          <td colspan="2" align="center"><strong>Bienvenida</strong></td>
         </tr>
         <tr>
           <td>10:00 - 10:30h.</td>
-          <td colspan="2">Swiss Re</td>
-          <td>Ágora</td>
-        </tr>
-        <tr>
-          <td>10:30 - 11:15h.</td>
-          <td colspan="2">Grupo Santander</td>
-          <td>Ágora</td>
-        </tr>
-        <tr>
-          <td>10:30 - 11:15h.</td>
-          <td colspan="2">BROS</td>
-          <td>Aula 1</td>
-        </tr>
-        <tr>
-          <td>11:15 - 11:30h.</td>
-          <td colspan="3">DESCANSO</td>
-        </tr>
-        <tr>
-          <td>11:30 - 12:15h.</td>
           <td
-            >BBVA Technology: Presentación de dos nuevos prototipos para el
-            Marketing Hiperpersonalizado e Interfaces Humanas</td
+            ><strong>Swiss Re:</strong> From natural catastrophes to cybersecurity</td
           >
-          <td>Diego Anael Fava Ramos y Elena Bueno Salmeron</td>
-          <td>Ágora</td>
+          <td>Javier Muñoz y Bernat Canadell</td>
         </tr>
         <tr>
-          <td>11:30 - 12:15h.</td>
-          <td>Grupo CelonIs: Transformando datos en valor con Process Mining</td
+          <td>10:30 - 11:00h.</td>
+          <td colspan="2"><strong>Grupo Santander</strong></td>
+          <td colspan="2"><strong>Bros Group</strong></td>
+        </tr>
+        <tr>
+          <td>11:00 - 11:30h.</td>
+          <td colspan="2"
+            ><strong>Incibe:</strong> Aceleración e incubadora de startups en ciberseguridad.
+            Programa Cyber Empresa</td
+          >
+          <td
+            ><strong>Celonis:</strong> Transformando datos en valor con Process Mining</td
           >
           <td>Julio Gómez</td>
-          <td>Ágora</td>
+        </tr>
+        <tr>
+          <td>11:30 - 12:00h.</td>
+          <td
+            ><strong>BBVA Technology:</strong> Presentación de dos nuevos prototipos
+            para el Marketing Hiperpersonalizado e Interfaces Humanas</td
+          >
+          <td>Diego Anael Fava Ramos y Elena Bueno Salmeron</td>
+          <td
+            ><strong>Mercedes Benz:</strong> Data Mesh y Velocidad, Acelerando hacia
+            el Futuro del Big Data con Mercedes Benz</td
+          >
+          <td>César Antonio Restrepo</td>
+        </tr>
+        <tr>
+          <td>12:00 - 12:15h.</td>
+          <td colspan="4" align="center"><strong>DESCANSO</strong></td>
         </tr>
         <tr>
           <td>12:15 - 13:00h.</td>
@@ -66,32 +77,37 @@ import Section from "./Section.astro";
             enamorarte
           </td>
           <td>Alejandro Cornetti</td>
-          <td>Ágora</td>
+          <td colspan="2">Unicef</td>
         </tr>
         <tr>
           <td>13:00 - 13:45h.</td>
-          <td>Mesa redonda: Si ya tengo GPT, ¿para qué necesito formarme? Derivadas e implicaciones de segundo orden en el futuro de la IA</td>
+          <td
+            ><strong>Mesa redonda:</strong> Si ya tengo GPT, ¿para qué necesito formarme?
+            Derivadas e implicaciones de segundo orden en el futuro de la IA</td
+          >
           <td
             >Javier G. Recuenco , Agustín Cuenca , Gema Parreño y Carlos
             Hernández Karliky</td
           >
-          <td>Ágora</td>
+          <td><strong>AWS:</strong> Cultura de la innovación</td>
         </tr>
         <tr>
           <td>14:00 - 15:00h.</td>
-          <td colspan="3">DESCANSO</td>
+          <td colspan="4" align="center"><strong>DESCANSO</strong></td>
         </tr>
         <tr>
           <td>16:00 - 17:00h.</td>
-          <td>CTF Santander</td>
+          <td><strong>CTF Santander</strong></td>
           <td>Jauma Baltasar y Virginia Santos</td>
-          <td>Ágora</td>
         </tr>
         <tr>
           <td>18:30 - 19:30h.</td>
-          <td>Evento UX “Todo mal”: Después de 25 años diseñando y 20 años dando clase sobre diseño, estos son los 10 errores que cometí en mi propia startup (spoiler: todos fueron de diseño)</td>
-          <td>Lula de León</td>
-          <td>Ágora</td>
+          <td
+            >Evento UX “Todo mal”: Después de 25 años diseñando y 20 años dando
+            clase sobre diseño, estos son los 10 errores que cometí en mi propia
+            startup (spoiler: todos fueron de diseño)</td
+          >
+          <td>Lula de León con Raúl Marín</td>
         </tr>
       </tbody>
     </table>
@@ -113,5 +129,9 @@ import Section from "./Section.astro";
 
   tr:nth-child(odd) td {
     @apply bg-neutral-100;
+  }
+
+  tr > td:first-child {
+    @apply whitespace-nowrap;
   }
 </style>
