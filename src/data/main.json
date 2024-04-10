@@ -1,4 +1,6 @@
 {
+  "edition": "IV",
+  "date": "17 de abril",
   "legal": {
     "name": "IMMUNE",
     "company": "IMMUNE CODING INSTITUTE S.L.",
@@ -7,11 +9,6 @@
     "email": "central@immune.institute",
     "address": "Paseo de la Castellana 89, planta baja inferior, local 3, puerta 2, Madrid 28046"
   },
-  "cta": [
-    "¡APÚNTATE!",
-    "#"
-  ],
-  "edition": "IV",
   "programs": [
     "Data Science",
     "Ciberseguridad",
@@ -19,49 +16,6 @@
     "Inteligencia Artificial",
     "Cloud Computing",
     "Diseño UX/UI"
-  ],
-  "date": "17 de abril",
-  "business": [
-    {
-      "src": "singular_solving-logo.svg",
-      "alt": "Singular Solving",
-      "size": [
-        144,
-        40
-      ]
-    },
-    {
-      "src": "entaina-logo.webp",
-      "alt": "Entaina",
-      "size": [
-        200,
-        40
-      ]
-    },
-    {
-      "src": "leemons-logo.svg",
-      "alt": "Leemons",
-      "size": [
-        200,
-        40
-      ]
-    },
-    {
-      "src": "immersive_labs-logo.svg",
-      "alt": "Immersive Labs",
-      "size": [
-        240,
-        40
-      ]
-    },
-    {
-      "src": "izertis-logo.webp",
-      "alt": "Izertis",
-      "size": [
-        144,
-        40
-      ]
-    }
   ],
   "people": [
     {
@@ -199,8 +153,74 @@
       "name": "Julio Gómez",
       "position": "Junior Product and Program Manager, Academic Alliance.",
       "logo": [
-        "celonis-logo.svg",
+        "celonis-logo-white.svg",
         "Celonis"
+      ]
+    }
+  ],
+  "business": [
+    {
+      "src": "singular_solving-logo.svg",
+      "alt": "Singular Solving",
+      "size": [
+        144,
+        40
+      ]
+    },
+    {
+      "src": "entaina-logo.webp",
+      "alt": "Entaina",
+      "size": [
+        200,
+        40
+      ]
+    },
+    {
+      "src": "leemons-logo.svg",
+      "alt": "Leemons",
+      "size": [
+        200,
+        40
+      ]
+    },
+    {
+      "src": "immersive_labs-logo.svg",
+      "alt": "Immersive Labs",
+      "size": [
+        240,
+        40
+      ]
+    },
+    {
+      "src": "izertis-logo.webp",
+      "alt": "Izertis",
+      "size": [
+        144,
+        40
+      ]
+    },
+    {
+      "src": "darfe-logo.webp",
+      "alt": "Darfe",
+      "size": [
+        60,
+        40
+      ]
+    },
+    {
+      "src": "bbva_technology-logo.webp",
+      "alt": "BBVA Technology",
+      "size": [
+        144,
+        40
+      ]
+    },
+    {
+      "src": "celonis-logo.webp",
+      "alt": "Celonis",
+      "size": [
+        144,
+        40
       ]
     }
   ],
