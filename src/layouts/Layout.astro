@@ -39,6 +39,10 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
         --swiper-theme-color: theme(colors.primary.400) !important;
       }
 
+      ::selection {
+        @apply bg-primary-400 text-neutral-50;
+      }
+
       /** Scrollbar */
       ::-webkit-scrollbar {
         @apply w-2;
