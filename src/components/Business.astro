@@ -27,18 +27,25 @@ import Section from "./Section.astro";
       </p>
     </div>
 
-    <div class="grid sm:grid-cols-3 gap-2">
+    <div class="grid sm:grid-cols-3 gap-1">
       {
         data.business.map((item: { src: string; alt: string; size: number[] }) => (
           <>
-            <div class="border border-neutral-100 grid place-items-center p-5">
+            <div class="grid place-items-center p-5 relative overflow-hidden">
+              <img
+                src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/${item.src}`}
+                alt={item.alt}
+                width={item.size[0]}
+                height={item.size[1]}
+                class="absolute blur-3xl"
+              />
               <img
                 src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/${item.src}`}
                 alt={item.alt}
                 width={item.size[0]}
                 height={item.size[1]}
               />
-              <h3 class="text-neutral-400 self-end">{item.alt}</h3>
+              <h3 class="text-neutral-300 self-end">{item.alt}</h3>
             </div>
           </>
         ))
