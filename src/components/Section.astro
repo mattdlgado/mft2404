@@ -1,22 +1,23 @@
 ---
 interface Props {
     cols?: boolean;
+    id?: string;
 }
 
-const { cols } = Astro.props;
+const { cols, id } = Astro.props;
 const sectionClass =
     "bg-neutral-50 py-20 border-t border-t-primary-400";
 ---
 
 {
     cols ? (
-        <section class={sectionClass}>
+        <section id={id} class={sectionClass}>
             <div class="page cols">
                 <slot />
             </div>
         </section>
     ) : (
-        <section class={sectionClass}>
+        <section id={id} class={sectionClass}>
             <div class="page">
                 <slot />
             </div>

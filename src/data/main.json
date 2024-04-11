@@ -105,6 +105,18 @@
       "name": "César Antonio Restrepo",
       "position": "Big Data Consultant | Data engineer | Cloud Architect",
       "logo": ["mercedes_benz-logo.svg", "Mercedes Benz"]
+    },
+    {
+      "photo": "tiago_santos",
+      "name": "Tiago Santos",
+      "position": "Corporate Relations Director",
+      "logo": ["bros_group-logo.svg", "Bros Group"]
+    },
+    {
+      "photo": "alfonso_bris",
+      "name": "Alfonso Bris",
+      "position": "Director de Talento",
+      "logo": ["majorel-logo.svg", "Majorel"]
     }
   ],
   "business": [

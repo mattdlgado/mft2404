@@ -2,20 +2,20 @@
 import data from "../data/main.json";
 ---
 
-<section class="ponentes page py-20">
+<section id="ponentes" class="ponentes page py-20">
   <h2>Ponentes confirmados</h2>
-  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
     {
       data.people.map((item) => (
         <>
-          <div class="relative min-h-80 flex flex-col">
+          <div class="relative grid grid-rows-[max-content]">
             <img
               src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/${item.photo}.webp`}
               alt={item.name}
               height="256"
               width="256"
-              class="absolute top-0 left-0 w-full h-full object-cover"
               loading="lazy"
+              class="w-full h-64 object-cover"
             />
             {item.logo && (
               <>
@@ -24,12 +24,12 @@ import data from "../data/main.json";
                   alt={item.logo[1]}
                   height="20"
                   width="144"
-                  class="glass p-2 w-auto h-6 box-content object-contain object-left bg-neutral-50 text-neutral-50 z-10 self-end"
                   loading="lazy"
+                  class="absolute top-0 right-0 p-2 w-auto h-6 box-content bg-neutral-50"
                 />
               </>
             )}
-            <div class="glass p-2 w-fit bg-neutral-950/50 text-neutral-50 z-10 mt-auto">
+            <div class="glass p-2 bg-neutral-950/50 text-neutral-50">
               <h3>{item.name}</h3>
               {item.position && (
                 <p class="reset">
