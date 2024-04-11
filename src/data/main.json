@@ -109,14 +109,49 @@
   ],
   "business": [
     {
+      "src": "swiss_re-logo.svg",
+      "alt": "Swiss Re",
+      "size": [160, 40]
+    },
+    {
+      "src": "santander-logo.svg",
+      "alt": "Santander",
+      "size": [200, 40]
+    },
+    {
+      "src": "bros_group-logo.svg",
+      "alt": "Bros Group",
+      "size": [160, 40]
+    },
+    {
+      "src": "incibe_emprende-logo.webp",
+      "alt": "Incibe Emprende",
+      "size": [130, 40]
+    },
+    {
+      "src": "celonis-logo.webp",
+      "alt": "Celonis",
+      "size": [120, 40]
+    },
+    {
       "src": "bbva_technology-logo.webp",
       "alt": "BBVA Technology",
       "size": [144, 40]
     },
     {
-      "src": "swiss_re-logo.svg",
-      "alt": "Swiss Re",
+      "src": "mercedes_benz-logo.svg",
+      "alt": "Mercedes Benz",
       "size": [160, 40]
+    },
+    {
+      "src": "darfe-logo.webp",
+      "alt": "Darfe",
+      "size": [60, 40]
+    },
+    {
+      "src": "unicef-logo.webp",
+      "alt": "Unicef",
+      "size": [140, 40]
     },
     {
       "src": "singular_solving-logo.svg",
@@ -129,9 +164,14 @@
       "size": [160, 40]
     },
     {
-      "src": "leemons-logo.svg",
-      "alt": "Leemons",
-      "size": [180, 40]
+      "src": "izertis-logo.webp",
+      "alt": "Izertis",
+      "size": [120, 40]
+    },
+    {
+      "src": "aws-logo.svg",
+      "alt": "AWS",
+      "size": [70, 40]
     },
     {
       "src": "immersive_labs-logo.svg",
@@ -139,44 +179,14 @@
       "size": [220, 40]
     },
     {
-      "src": "izertis-logo.webp",
-      "alt": "Izertis",
-      "size": [120, 40]
-    },
-    {
-      "src": "darfe-logo.webp",
-      "alt": "Darfe",
-      "size": [60, 40]
-    },
-    {
-      "src": "celonis-logo.webp",
-      "alt": "Celonis",
-      "size": [120, 40]
-    },
-    {
-      "src": "santander-logo.svg",
-      "alt": "Santander",
-      "size": [200, 40]
-    },
-    {
-      "src": "incibe_emprende-logo.webp",
-      "alt": "Incibe Emprende",
-      "size": [144, 40]
-    },
-    {
-      "src": "unicef-logo.webp",
-      "alt": "Unicef",
-      "size": [144, 40]
-    },
-    {
-      "src": "mercedes_benz-logo.svg",
-      "alt": "Mercedes Benz",
-      "size": [160, 40]
+      "src": "leemons-logo.svg",
+      "alt": "Leemons",
+      "size": [180, 40]
     },
     {
       "src": "talentoo-logo.webp",
       "alt": "Talentoo",
-      "size": [144, 40]
+      "size": [140, 40]
     }
   ],
   "images": [
