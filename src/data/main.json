@@ -117,6 +117,12 @@
       "name": "Alfonso Bris",
       "position": "Director de Talento",
       "logo": ["majorel-logo.svg", "Majorel"]
+    },
+    {
+      "photo": "toni_navas",
+      "name": "Toni Navas",
+      "position": "Chief Information & Digital Transformation Officer (CIO & CDxO)",
+      "logo": ["dorna-logo.webp", "Dorna Sports"]
     }
   ],
   "business": [
