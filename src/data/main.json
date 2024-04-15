@@ -19,51 +19,10 @@
   ],
   "people": [
     {
-      "photo": "raul_marin",
-      "name": "Raúl Marín",
-      "position": "Head teacher UX/UI",
-      "logo": ["immune-logo.svg", "IMMUNE Technology Institute"]
-    },
-    {
-      "photo": "javier_recuenco",
-      "name": "Javier Recuenco",
-      "position": "CSO & Founder",
-      "logo": ["singular_solving-logo.svg", "Singular Solving"]
-    },
-    {
       "photo": "agustin_cuenca",
       "name": "Agustin Cuenca",
       "position": "CEO & Founder",
       "logo": ["entaina-logo.webp", "Entaina"]
-    },
-    {
-      "photo": "lula_leon",
-      "name": "Lula de León",
-      "position": "CEO",
-      "logo": ["leemons-logo.svg", "Leemons"]
-    },
-    {
-      "photo": "jaume_baltasar",
-      "name": "Jaume Baltasar",
-      "position": "Solutions Consultant",
-      "logo": ["immersive_labs-logo.svg", "Immersive Labs"]
-    },
-    {
-      "photo": "virginia_santos",
-      "name": "Virginia Santos",
-      "position": "Territory Manager South EMEA",
-      "logo": ["immersive_labs-logo.svg", "Immersive Labs"]
-    },
-    {
-      "photo": "gema_parreno",
-      "name": "Gema Parreño",
-      "position": "Data Scientist",
-      "logo": ["izertis-logo.webp", "Izertis"]
-    },
-    {
-      "photo": "carlos_karliky",
-      "name": "Carlos Hernández Karliky",
-      "position": "Research Scientist"
     },
     {
       "photo": "alejandro_corletti",
@@ -71,46 +30,10 @@
       "logo": ["darfe-logo.webp", "Darfe"]
     },
     {
-      "photo": "elena_bueno",
-      "name": "Elena Bueno",
-      "position": "Big Data Engineer",
-      "logo": ["bbva_technology-logo.webp", "BBVA Technology"]
-    },
-    {
-      "photo": "diego_anael",
-      "name": "Diego Anael Fava",
-      "position": "Data Engineer & Business & AI",
-      "logo": ["bbva_technology-logo.webp", "BBVA Technology"]
-    },
-    {
-      "photo": "julio_gomez",
-      "name": "Julio Gómez",
-      "position": "Junior Product and Program Manager, Academic Alliance.",
-      "logo": ["celonis-logo.webp", "Celonis"]
-    },
-    {
-      "photo": "javier_munoz",
-      "name": "Javier Muñoz",
-      "position": "IAM Team Lead",
-      "logo": ["swiss_re-logo.svg", "Swiss Re"]
-    },
-    {
-      "photo": "bernat_canadell",
-      "name": "Bernat Canadell",
-      "position": "Cyber Defence Engineering Lead",
-      "logo": ["swiss_re-logo.svg", "Swiss Re"]
-    },
-    {
-      "photo": "cesar_antonio_restrepo",
-      "name": "César Antonio Restrepo",
-      "position": "Big Data Consultant | Data engineer | Cloud Architect",
-      "logo": ["mercedes_benz-logo.svg", "Mercedes Benz"]
-    },
-    {
-      "photo": "tiago_santos",
-      "name": "Tiago Santos",
-      "position": "Corporate Relations Director",
-      "logo": ["bros_group-logo.svg", "Bros Group"]
+      "photo": "alex_rickert",
+      "name": "Alex Rickert",
+      "position": "Sr. Territory Manager FSI & Software",
+      "logo": ["aws-logo.svg", "AWS"]
     },
     {
       "photo": "alfonso_bris",
@@ -119,10 +42,105 @@
       "logo": ["majorel-logo.svg", "Majorel"]
     },
     {
+      "photo": "bernat_canadell",
+      "name": "Bernat Canadell",
+      "position": "Cyber Defence Engineering Lead",
+      "logo": ["swiss_re-logo.svg", "Swiss Re"]
+    },
+    {
+      "photo": "carlos_karliky",
+      "name": "Carlos Hernández Karliky",
+      "position": "Research Scientist"
+    },
+    {
+      "photo": "cesar_antonio_restrepo",
+      "name": "César Antonio Restrepo",
+      "position": "Big Data Consultant | Data engineer | Cloud Architect",
+      "logo": ["mercedes_benz-logo.svg", "Mercedes Benz"]
+    },
+    {
+      "photo": "diego_anael",
+      "name": "Diego Anael Fava",
+      "position": "Data Engineer & Business & AI",
+      "logo": ["bbva_technology-logo.webp", "BBVA Technology"]
+    },
+    {
+      "photo": "elena_bueno",
+      "name": "Elena Bueno",
+      "position": "Big Data Engineer",
+      "logo": ["bbva_technology-logo.webp", "BBVA Technology"]
+    },
+    {
+      "photo": "gema_parreno",
+      "name": "Gema Parreño",
+      "position": "Data Scientist",
+      "logo": ["izertis-logo.webp", "Izertis"]
+    },
+    {
+      "photo": "jaume_baltasar",
+      "name": "Jaume Baltasar",
+      "position": "Solutions Consultant",
+      "logo": ["immersive_labs-logo.svg", "Immersive Labs"]
+    },
+    {
+      "photo": "javier_munoz",
+      "name": "Javier Muñoz",
+      "position": "IAM Team Lead",
+      "logo": ["swiss_re-logo.svg", "Swiss Re"]
+    },
+    {
+      "photo": "javier_recuenco",
+      "name": "Javier Recuenco",
+      "position": "CSO & Founder",
+      "logo": ["singular_solving-logo.svg", "Singular Solving"]
+    },
+    {
+      "photo": "jose_manuel_avila",
+      "name": "José Manuel Ávila",
+      "position": "Head Attack Surface Management & CERT",
+      "logo": ["santander-logo.svg", "Santander"]
+    },
+    {
+      "photo": "julio_gomez",
+      "name": "Julio Gómez",
+      "position": "Junior Product and Program Manager, Academic Alliance.",
+      "logo": ["celonis-logo.webp", "Celonis"]
+    },
+    {
+      "photo": "lula_leon",
+      "name": "Lula de León",
+      "position": "CEO",
+      "logo": ["leemons-logo.svg", "Leemons"]
+    },
+    {
+      "photo": "maria_simon",
+      "name": "María Simón Salcedo",
+      "position": "Ciberseguridad",
+      "logo": ["santander-logo.svg", "Santander"]
+    },
+    {
+      "photo": "raul_marin",
+      "name": "Raúl Marín",
+      "position": "Head teacher UX/UI",
+      "logo": ["immune-logo.svg", "IMMUNE Technology Institute"]
+    },
+    {
+      "photo": "tiago_santos",
+      "name": "Tiago Santos",
+      "position": "Corporate Relations Director",
+      "logo": ["bros_group-logo.svg", "Bros Group"]
+    },
+    {
       "photo": "toni_navas",
       "name": "Toni Navas",
       "position": "Chief Information & Digital Transformation Officer (CIO & CDxO)",
       "logo": ["dorna-logo.webp", "Dorna Sports"]
+    },
+    {
+      "photo": "virginia_santos",
+      "name": "Virginia Santos",
+      "position": "Territory Manager South EMEA",
+      "logo": ["immersive_labs-logo.svg", "Immersive Labs"]
     }
   ],
   "business": [
