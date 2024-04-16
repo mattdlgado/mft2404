@@ -218,6 +218,21 @@
       "src": "talentoo-logo.webp",
       "alt": "Talentoo",
       "size": [140, 40]
+    },
+    {
+      "src": "dorna-logo.webp",
+      "alt": "Dorna",
+      "size": [140, 40]
+    },
+    {
+      "src": "hp-logo.svg",
+      "alt": "HP",
+      "size": [40, 40]
+    },
+    {
+      "src": "stratesys-logo.webp",
+      "alt": "Stratesys",
+      "size": [140, 40]
     }
   ],
   "images": [
